@@ -15,9 +15,6 @@ title: YouNiverse Data Story
 # Your name to show in the footer
 author: Lassa8639 Team
 
-# cover image : 
-cover-img: "/assets/img/mental_health_cover_test.png"
-
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -44,7 +41,6 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 # title-img: "/assets/img/avatar-icon.png"
-
 
 #####################################
 # --- Footer social media links --- #
@@ -101,7 +97,7 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "Youniverse Data Story"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -116,7 +112,7 @@ feed_show_tags: true
 post_search: true
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
-edit_page_button: true
+edit_page_button: false
 
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
@@ -147,7 +143,7 @@ footer-hover-col: "#0085A1"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
+navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
