@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Is YouTube Riding the Mental Health Wave? 
-subtitle: subtitile about mental health 
+subtitle: Deep dive into the Youtube Mental Health World 
 cover-img: /assets/img/header_.png
 thumbnail-img: /assets/img/header_.png
 share-img: /assets/img/header_.png
