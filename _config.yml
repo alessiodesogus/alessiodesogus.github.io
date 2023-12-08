@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-# title: Is YouTube Riding the Mental Health Wave?
+title: YouNiverse Data Story
 
 # Your name to show in the footer
 author: Lassa8639 Team
@@ -23,7 +23,7 @@ cover-img: "/assets/img/mental_health_cover_test.png"
 ###############################################
 
 navbar-links:
- About Me: "Team Members"
+ About Me: "Team"
  # Resources:
    # - Beautiful Jekyll: "https://beautifuljekyll.com"
    # - Learn markdown: "https://www.markdowntutorial.com/"
