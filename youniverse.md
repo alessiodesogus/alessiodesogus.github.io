@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Is YouTube Riding the Mental Health Wave? 
 subtitle: subtitile about mental health 
 # cover-img: /assets/img/header_.png
