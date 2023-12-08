@@ -23,6 +23,7 @@ navbar-links:
  Data Story : "youniverse"
  Resources:
     - YouNiverse Dataset: "https://github.com/epfl-dlab/YouNiverse"
+    - Our Repository: "https://github.com/epfl-ada/ada-2023-project-lassa8639"
     - ADA 2023 : "https://epfl-ada.github.io/teaching/fall2023/cs401/"
   # Author's home: "https://deanattali.com"
 
