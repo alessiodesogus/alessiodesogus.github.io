@@ -23,7 +23,7 @@ cover-img: "/assets/img/mental_health_cover_test.png"
 ###############################################
 
 navbar-links:
- About Me: "Team"
+ About Me: "aboutme"
  # Resources:
    # - Beautiful Jekyll: "https://beautifuljekyll.com"
    # - Learn markdown: "https://www.markdowntutorial.com/"
