@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: YouNiverse Data Story
+title: YouNiverse 
 
 # Your name to show in the footer
 author: Alessio Desogus, Alessandro D'Urso, Shaochen Bai, Meichen Guo & Liyu Zhang
@@ -21,6 +21,7 @@ author: Alessio Desogus, Alessandro D'Urso, Shaochen Bai, Meichen Guo & Liyu Zha
 
 navbar-links:
  ## Team Members: "aboutme"
+ # Data Story : "youniverse"
  Resources:
     - YouNiverse Dataset: "https://github.com/epfl-dlab/YouNiverse"
     - ADA 2023 : "https://epfl-ada.github.io/teaching/fall2023/cs401/"
