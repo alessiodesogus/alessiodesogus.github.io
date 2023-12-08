@@ -15,6 +15,9 @@ title: Is YouTube Riding the Mental Health Wave?
 # Your name to show in the footer
 author: Lassa8639 Team
 
+# cover image : 
+cover-img: "/assets/img/mental_health_cover_test.png"
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -40,9 +43,6 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 # title-img: "/assets/img/avatar-icon.png"
-
-# cover image : 
-cover-img: "/assets/img/avatar-icon.png"
 
 
 #####################################
