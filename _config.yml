@@ -20,7 +20,8 @@ author: Alessio Desogus, Alessandro D'Urso, Shaochen Bai, Meichen Guo & Liyu Zha
 ###############################################
 
 navbar-links:
- Data Story : "youniverse"
+ Sentiment Analysis: "sentiments"
+ Data Story: "youniverse"
  Resources:
     - YouNiverse Dataset: "https://github.com/epfl-dlab/YouNiverse"
     - Our Repository: "https://github.com/epfl-ada/ada-2023-project-lassa8639"
