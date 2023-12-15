@@ -22,7 +22,7 @@ The data is YouNiverse, and
 
 keyword filtering along with snow ball sampling to extract mental health videos,
 
-some of our keywords used are: ...
+Some of our keywords include: `"mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc.
 
 We ask the title of the video to contain such keywords, and at least one of th description and tag should contain as well.
 
@@ -32,9 +32,11 @@ Finally, during the process our snowball sampling, we witness some wrongly filte
 
 Finally, our filtered result can be displayed as a wordcloud figure, with many keywords ..
 
-<div style="text-align:center">
+<!-- <div style="text-align:center">
 <img src="assets/img/wordcloud.png">
-</div>
+</div> -->
+
+![wordcloud](assets/img/wordcloud.png)
 
 {% include samples.html %}
 
@@ -50,5 +52,5 @@ Seems pretty good, now we can display the number and the ratio of the mental hea
 
 
 
-Some of our keywords include: `"mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc.
+
 
