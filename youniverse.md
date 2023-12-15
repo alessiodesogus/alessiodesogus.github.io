@@ -11,5 +11,7 @@ share-img: /assets/img/header_2.png
 
 ## The YouNiverse Dataset
 
+Some of our keywords include: `"mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc.
+
 {% include ratio.html %}
 
