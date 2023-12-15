@@ -32,9 +32,6 @@ Finally, during the process our snowball sampling, we witness some wrongly filte
 
 Finally, our filtered result can be displayed as a wordcloud figure, with many keywords ..
 
-<!-- <div style="text-align:center">
-<img src="assets/img/wordcloud.png">
-</div> -->
 
 ![wordcloud](assets/img/wordcloud.png)
 
@@ -47,7 +44,12 @@ Seems pretty good, now we can display the number and the ratio of the mental hea
 {% include ratio.html %}
 
 
-[Interpretation]: 
+[Interpretation]: It is intersting to see that although there is an increase in numbers of video uploaded..., the ratio with respect to all uploaded videos from the same category does not increase much. A mere 2.303e-06 coefficient can be estimated by linear regression, but again the results are not statistically significant.
+
+Is this a common thing? We do not want to immdediately jump to a conclusion that there's no trend for the uploaded videos at all, so we filter severl videos from other socially important problems such as `climate change`, `gender discrimination`, etc. to compare their trend as well. And the comparison is illustrated below:
+
+
+ {% include comparison.html %}
 
 
 
