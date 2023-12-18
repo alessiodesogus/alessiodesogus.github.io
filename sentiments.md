@@ -11,7 +11,7 @@ share-img: /assets/img/header_2.png
 
 <div style="text-align: justify">Building on our previous analyses, which have meticulously dissected various aspects of mental health videos through time-series evaluations and an in-depth exploration of video metadata, we now turn our focus to a crucial and often underexplored facet: how these videos convey. 
 
-This phase of our investigation seeks to bridge the gap between quantitative data and the qualitative essence of the content, through NLP analysis methodologies. By delving into the emotional undercurrents of these videos, we aim to paint a comprehensive picture, discovering out whether the top mental health videos are trying to use some tricks to become more popular - strong tone, engaging keyword...
+This phase of our investigation seeks to bridge the gap between quantitative data and the qualitative essence of the content, through NLP analysis methodologies. By delving into the emotional undercurrents of these videos, we aim to paint a comprehensive picture, discovering out whether the top mental health videos are trying to use some tricks to become more popular - strong tone, engaging topics...
 </div>
 
 
@@ -35,9 +35,8 @@ The initial prevalence of positive sentiment might suggest an initial phase of a
 The critical question arises as to whether this shift is a response to a growing demand for authenticity in mental health discussions or if it is merely a reflection of creators adapting to a trend. The steady rise in content with negative sentiment could point to an evolving public consciousness that favors a more holistic and truthful portrayal of mental health, countering earlier tendencies towards idealized portrayals. If this change were driven by trend-following alone, one might expect to see fluctuations that correlate with popular discourse at specific points in time. However, the sustained increase over a 14-year span suggests a more profound reorientation in how mental health is approached in digital media.
 
 
-<div style="text-align: justify">
 Now we take a deeper look into the sentiment scores, that how they evolve with popularity. We define a metrics for the popularity of YouTube videos here: `popularity_score` = `view_count` + `like_count`, considering the influence of both number of views and number of likes to the videos.
-</div>
+
 {% include distribution_popularity.html %}
 
 
@@ -75,3 +74,14 @@ Topic 4, featuring words like "brain," "big," "old," and "traits," presents a mi
 A unique observation is the repeated occurrence of words like "open," "store," "bought," and "girls," across various topics. This repetition might suggest a common style or thematic element in these videos, possibly indicating a specific trend or a commonly adopted format among content creators.
 
 Finally, the presence of words like "desk," "zen," "garden," and "relieving" in Topic 9 hints at content focused on stress relief and relaxation techniques, which is relevant to mental health but in a more indirect, lifestyle-oriented manner.
+
+
+When we look deeper into the topic detection analysis of mental health video titles, the narrative begins to unfold even further. The LDA model has surfaced topics that underscore a serious and substantive engagement with mental health issues. For example, terms like "psychological," "tips," "love," "signs," and "disorders" are indicative of content that is not just skimming the surface for views or likes. Instead, these topics suggest a deeper dive into the intricacies of mental health, offering educational content and advice that could genuinely aid viewers in understanding and managing their mental well-being.
+
+This inclination towards substantial content is crucial in our assessment of whether mental health videos are merely trend-following or revealing real social issues. While some topics may seem to align with popular culture or entertainment, they could very well be strategic choices by content creators to engage a broader audience before delving into the more serious discussions suggested by other prevalent themes.
+
+**Our findings show that while there is some content that may appear to follow viewing trends with lighter themes, there is a significant portion of mental health videos that commit to more profound topics**. This balance indicates that the space for mental health content on digital platforms is not monolithic and trend-driven but is instead a complex landscape where serious social issues are given the spotlight alongside more engaging, viewer-friendly content.
+
+As we consider the overarching trends in sentiment and topic popularity, the coherence in the message becomes apparent. The gradual shift towards a more sober tone in descriptions and the emergence of weightier topics in video titles both point towards a digital environment that is increasingly reflective of the real societal dialogue on mental health. Far from simply riding the waves of transient trends, it appears that the mental health conversation on platforms like YouTube is evolving into a space where real issues are confronted, discussed, and destigmatized.
+
+In conclusion, the data from sentiment analysis and topic detection when considered together, weave a narrative that affirms the growing maturity of discourse around mental health in digital media. This maturation reflects a conscious shift by content creators to acknowledge and address the complex realities of mental health, indicating a broader cultural movement towards openness and authenticity in the portrayal of mental health issues.
