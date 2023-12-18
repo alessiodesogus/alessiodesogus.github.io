@@ -28,12 +28,14 @@ We are using the dataset `YouNiverse`, a large collection of channel and video m
 view counts. 
 
 For your reference, you can check the dataset [HERE](https://doi.org/10.5281/zenodo.46500463). 
-# Mental health: Trendy Problem?
+# Mental Health: Trendy Problem?
 > RQ1: Is mental health a trend on YouTube?
 
-According article1, .. People tend to have more mental issues than ever. We think this situation also reflects on YouTube, resulting in more and more videos, and people start sharing more of this content ...
+We all know that `Mental Health` is not a new topic today. At the beginning of 21st Century, one in four adults in US suffered from some form of mental illness -— nearly 60 million Americans in any given year _(Agency for Healthcare Research and Quality, 2009)_. 
 
-We tend to if this is true in the following
+Then it comes to September 2021, the COVID-19 pandemic has significantly impacted mental health worldwide. The problem got much worse and went into the public sight again after the outbreak of the pandemic. According to the **World Health Organization (WHO)**, cases of anxiety and depression have `increased by 25%` globally since the pandemic began, with suicide the second leading cause of death among 15-29-year-olds. Approximately `one in five people` in post-conflict settings have a mental health condition.
+
+**But, it is already a trend before the pandemic?** Internet reflects people's life within a certain period. We found many videos about mental health on Youtube even before the pandemic. Therefore, we would like to focus on the them to get the answers. 
 
 ## Data
 
