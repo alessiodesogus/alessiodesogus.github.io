@@ -57,29 +57,43 @@ The method we use to retrieve relevent videos is based on the string matching of
 
 **Problem**: However, after the first filter and printing partial results, the problem is that many of them seems irrelevant to mental health like _The Lego Batman Movie | Batman's Lonely Life_. As a result, the first version of analysis results are not very satisfactory, and we get little information. To solve the problem, here comes to our second filter. 
 
+![problem](assets/img/fixproblem.png)
+
 ### 1.1.2 Second Filter (snow ball sampling)
-The basic idea is that: After retrieving, we check the results manually and see if there is any insightful words that occur in the result but is not included in our designed keyword list. If such word exists, we `iteratively add them to the list` and `repeat the process` 1-3 times to update the results until no new words can be found.
+For the below block, we have done several additional filtering aiming for a more desired outcome.
 
-It takes a long time to process through the data, so we cannot do the loop many times, further improvement on the topic may include improving keyword list quality, adopting stemming on words for better matching, etc.
-
-
-
-We ask the title of the video to contain such keywords, and at least one of th description and tag should contain as well.
-
-To further tailor to our video content, we really want to focus on the videos with the desired category, so we eliminate videos with category as follow...
-
-Finally, during the process our snowball sampling, we witness some wrongly filtered content such as "monkey..", so we manually filter out these videos containing the bad keywords.
-
-Finally, our filtered result can be displayed as a wordcloud figure, with many keywords ..
-
+1) After retrieving, we check the results manually and see if there is any insightful words that occur in the result but is not included in our designed keyword list. If such word exists, we `iteratively add them to the list` and `repeat the process` 1-3 times to update the results until no new words can be found.
+2) We require that in the `title` of the video, at least one of keywords should exist, which is tighter than the `two out of three requirement` above.
+3) We eliminate some videos belonging to categories like `Music`, `Movie` since we inspect the content of the videos and most of them are false positive. Till now, the categories we allow are included in the list `constrained_category`.
+4) Specifically for `mental health` videos, we filter some of the undesired contents based on keywords like `monkey`, `malone`, for they show little relevance to the topic.
+5) Finally, use a wordcloud figure and display our final results to validate the results we obtained so far.
 
 ![wordcloud](assets/img/wordcloud.png)
-
 {% include samples.html %}
 
-## 1.2 Time Trend (compared with other topics)
+**Further Improvement**: It takes a long time to process through the data, so we cannot do the loop many times, further improvement on the topic may include improving keyword list quality, adopting stemming on words for better matching, etc.
 
-Seems pretty good, now we can display the number and the ratio of the mental health videos uploaded per month from 2006 to 2019. 
+### 1.1.3 Control Group
+Aside from the target videos reagarding mental health, we also aim to retrieve videos of **three representative types**:
+
+- Long-term trendy videos: This type of videos is the result of a long-term social trend, reflecting the raising awareness of some profound topics, e.g. `gender equality`, `climate change`. These topics enjoy a long-lasting attention and a steady increase in terms of YouTube videos. We hypothesize that `mental health` should belongs to such topic.
+
+- Short-term trendy videos: This type of videos represents a very fashionable impulse on people posting same kind of videos just because other people are also doing it. The heat may be extreme at the moment but may not last long. Example such as `ice bucket challenge`, etc.
+
+- Control group videos: This type of videos had not been brought to the spot of light during 2015-2019, but nonetheless we may still observe a growth in the number of videos on YouTube because the user growth and prevelant influence of digitilization.
+
+We would like to compare the trend of the three types of videos and see if any interesting conclusion may be drawn from the results.
+
+## 1.2 Time Trend Analysis
+
+Now everything is ready! It is time to look at the time trend -- how much videos about mental health are uploaded per month and their growth over the years.
+
+### 1.2.1 Mental Health Trend
+Now we display the number and the ratio of the mental health videos uploaded per month from 2006 to 2019. 
+
+We display both video numbers and ratios throughout the year and applied a linear regression analysis to analyze if there is a trend. Although the p-value of the LR analysis indicates the relation is not statistically significant, we include it in our plot for reference.
+
+To this end, we couldn't demonstrate any significant increase of the uploaded mental health videos. But we do see a mild upward trend and we need to further compare the results with other topics to further validate our ideas.
 
 {% include ratio.html %}
 
