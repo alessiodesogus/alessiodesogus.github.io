@@ -103,20 +103,25 @@ We display both video numbers and ratios throughout the year and applied a linea
 
 Although the p-value of the LR analysis indicates the relation is not statistically significant, we include it in our plot for reference.
 
-To this end, we couldn't demonstrate any significant increase of the uploaded mental health videos. But we do see a mild upward trend and we need to further compare the results with other topics to further validate our ideas.
-
 {% include ratio.html %}
 
+To this end, we couldn't demonstrate any significant increase of the uploaded mental health videos. But we do see a mild upward trend.
 
-[Interpretation]: It is intersting to see that although there is an increase in numbers of video uploaded..., the ratio with respect to all uploaded videos from the same category does not increase much. A mere 2.303e-06 coefficient can be estimated by linear regression, but again the results are not statistically significant.
+Is this a common thing? We do not want to immdediately jump to a conclusion that there's no trend for the uploaded videos at all, so we filter severl videos from other socially important problems to compare their trend as well. And the comparison is illustrated below:
 
-Is this a common thing? We do not want to immdediately jump to a conclusion that there's no trend for the uploaded videos at all, so we filter severl videos from other socially important problems such as `climate change`, `gender discrimination`, etc. to compare their trend as well. And the comparison is illustrated below:
+### 1.2.2 Compare with Other Topics
 
+First, we look at the upload **RATIO**. 
+
+
+Remember our compared topics are : `gender equality` and `climate change`. We only plot their ratio throughout the years and put it into the log scales for a clearer comparison.
 
  {% include comparison.html %}
 
+It is rather surprising to see that none of the comparing trends shows a dramatic increase for their ratios. Nonetheless, **mental health issues receives more attention than the comparing topics**.
 
+Also, We hypothesize that maybe remaining a stable uploading ratio already means a sustained and consistent attention indicating it is one of the social trend. The upward trend doesn't show because the ranges of videos on YouTube are increasingly explored making the total numbers of videos rises comparably faster than videos from the specific topic.
 
+Ratio of the uploaded video number is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score of the videos:
 
-
-
+ {% include distribution_popularity.html %}
