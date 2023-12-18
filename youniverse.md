@@ -6,11 +6,30 @@ cover-img: /assets/img/header_2.png
 thumbnail-img: /assets/img/header_2.png
 share-img: /assets/img/header_2.png
 ---
+<div style="text-align: justify"> 
+Let us start with some simple questions: 
 
-<div style="text-align: justify"> Ever wondered how discussions around mental health on YouTube shape the platform’s content and channel landscape? In today's digital age, mental health has garnered paramount importance, and YouTube has emerged as a significant platform for individuals seeking information, support, and connection on this crucial topic. As we delve into our analysis, our goal is to explore whether mental health discussions are on the rise on YouTube, examining the trends, categories, and visual evolution of channels and videos to unveil the platform's changing landscape. </div>
+- Have you ever felt `pressure and depression` when there are so many deadlines? 
+- Have you ever seen any `videos talking about mental health` when surfring online on Youtube? 
+- There are tons of discussions around mental health on Youtube. Have you ever wondered how they `shape the platform’s content and channel landscape`? 
+
+In today's digital age, mental health has garnered paramount importance, and YouTube has emerged as a significant platform for individuals seeking information, support, and connection on this crucial topic. 
+
+Follow our story today and delve into our analysis! Explore together with us to get the answers: Are mental health discussions on the rise on YouTube? Let us examine deeply the trends, categories, and  evolution of channels and videos. 
+
+We invite you to join us on this journey of discovery, and we assure you that by the end you will unveil the platform's changing landscape and ave a better understanding of the ever-changing world of YouTube and the role mental health played within it.
+ </div>
 
 
-# Mental health: trendy problem?
+![invitation](assets/img/Accepting-the-Invitation.png)
+
+# The Dataset We Used
+We are using the dataset `YouNiverse`, a large collection of channel and video metadata from English-language YouTube presented by _Dr.Ribeiro_ and _Dr.West_. It comprises metadata for over 136k channels and 72.9M videos published between May 2005 and October 2019, as well as channel-level time-series data of weekly subscriber and
+view counts. 
+
+For your reference, you can check the dataset [HERE](https://doi.org/10.5281/zenodo.46500463). 
+# Mental health: Trendy Problem?
+> RQ1: Is mental health a trend on YouTube?
 
 According article1, .. People tend to have more mental issues than ever. We think this situation also reflects on YouTube, resulting in more and more videos, and people start sharing more of this content ...
 
