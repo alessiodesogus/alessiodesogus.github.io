@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Is YouTube Riding the Mental Health Wave? 
-subtitle: Deep dive into the Youtube Mental Health World 
+subtitle: Deep dive into the YouTube Mental Health World 
 cover-img: /assets/img/header_.png
 thumbnail-img: /assets/img/header_.png
 share-img: /assets/img/header_.png
@@ -9,9 +9,11 @@ share-img: /assets/img/header_.png
 <div style="text-align: justify"> 
 Let us start with some simple questions: 
 
-1) Have you ever felt `pressure and depression` when there are so many deadlines? 
-2) Have you ever seen any `videos talking about mental health` when surfring online on Youtube? 
-3) There are tons of discussions around mental health on Youtube. Have you ever wondered how they `shape the platform’s content and channel landscape`? 
+- Have you ever felt `pressure and depression` when there are so many deadlines?
+
+- Have you ever seen any `videos talking about mental health` when surfring online on Youtube? 
+
+- There are tons of discussions around mental health on Youtube. Have you ever wondered how they `shape the platform’s content and channel landscape`? 
 
 In today's digital age, mental health has garnered paramount importance, and YouTube has emerged as a significant platform for individuals seeking information, support, and connection on this crucial topic. 
 
@@ -53,9 +55,10 @@ Before starting the analysis, we need to get videos about mental health. This is
 The method we use to retrieve relevent videos is based on the string matching of keywords. The idea is that:
 
 1) We come up with a list of keywords  that is supposed to connect to the filed of mental health, including: `mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc.
+
 2) Since the dataset is extremely large, we read the files line by line and process them in a batch size of 200000. Three attributes are taken into account during processing, namely `description`, `tags` and `title`. If **at least two out of three text fields** contain a word in our designed word list, we assume that video is relevent and be retrieved. We adopt the function `pd.Dataframe.str.contains` to check the existence of the keywords.
 
-**Problem**: However, after the first filter and printing partial results, the problem is that many of them seems irrelevant to mental health like _The Lego Batman Movie | Batman's Lonely Life_. As a result, the first version of analysis results are not very satisfactory, and we get little information. To solve the problem, here comes to our second filter. 
+**Problem**: However, after the first filter and printing partial results, the problem is that many of them seems irrelevant to mental health like _The Lego Batman Movie: Batman's Lonely Life_. As a result, the first version of analysis results are not very satisfactory, and we get little information. To solve the problem, here comes to our second filter. 
 
 ![problem](assets/img/fixproblem.png)
 
@@ -63,9 +66,13 @@ The method we use to retrieve relevent videos is based on the string matching of
 For the below block, we have done several additional filtering aiming for a more desired outcome.
 
 1) After retrieving, we check the results manually and see if there is any insightful words that occur in the result but is not included in our designed keyword list. If such word exists, we `iteratively add them to the list` and `repeat the process` 1-3 times to update the results until no new words can be found.
+
 2) We require that in the `title` of the video, at least one of keywords should exist, which is tighter than the `two out of three requirement` above.
+
 3) We eliminate some videos belonging to categories like `Music`, `Movie` since we inspect the content of the videos and most of them are false positive. Till now, the categories we allow are included in the list `constrained_category`.
+
 4) Specifically for `mental health` videos, we filter some of the undesired contents based on keywords like `monkey`, `malone`, for they show little relevance to the topic.
+
 5) Finally, use a wordcloud figure and display our final results to validate the results we obtained so far.
 
 ![wordcloud](assets/img/wordcloud.png)
@@ -84,6 +91,7 @@ Aside from the target videos reagarding mental health, we also aim to retrieve v
 
 We would like to compare the trend of the three types of videos and see if any interesting conclusion may be drawn from the results.
 
+&nbsp;
 ## 1.2 Time Trend Analysis
 
 Now everything is ready! It is time to look at the time trend -- how much videos about mental health are uploaded per month and their growth over the years.
@@ -91,7 +99,9 @@ Now everything is ready! It is time to look at the time trend -- how much videos
 ### 1.2.1 Mental Health Trend
 Now we display the number and the ratio of the mental health videos uploaded per month from 2006 to 2019. 
 
-We display both video numbers and ratios throughout the year and applied a linear regression analysis to analyze if there is a trend. Although the p-value of the LR analysis indicates the relation is not statistically significant, we include it in our plot for reference.
+We display both video numbers and ratios throughout the year and applied a linear regression analysis to analyze if there is a trend. 
+
+Although the p-value of the LR analysis indicates the relation is not statistically significant, we include it in our plot for reference.
 
 To this end, we couldn't demonstrate any significant increase of the uploaded mental health videos. But we do see a mild upward trend and we need to further compare the results with other topics to further validate our ideas.
 
