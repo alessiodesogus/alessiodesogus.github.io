@@ -2,16 +2,16 @@
 layout: page
 title: Is YouTube Riding the Mental Health Wave? 
 subtitle: Deep dive into the Youtube Mental Health World 
-cover-img: /assets/img/header_2.png
-thumbnail-img: /assets/img/header_2.png
-share-img: /assets/img/header_2.png
+cover-img: /assets/img/header_.png
+thumbnail-img: /assets/img/header_.png
+share-img: /assets/img/header_.png
 ---
 <div style="text-align: justify"> 
 Let us start with some simple questions: 
 
-- Have you ever felt `pressure and depression` when there are so many deadlines? 
-- Have you ever seen any `videos talking about mental health` when surfring online on Youtube? 
-- There are tons of discussions around mental health on Youtube. Have you ever wondered how they `shape the platform’s content and channel landscape`? 
+1) Have you ever felt `pressure and depression` when there are so many deadlines? 
+2) Have you ever seen any `videos talking about mental health` when surfring online on Youtube? 
+3) There are tons of discussions around mental health on Youtube. Have you ever wondered how they `shape the platform’s content and channel landscape`? 
 
 In today's digital age, mental health has garnered paramount importance, and YouTube has emerged as a significant platform for individuals seeking information, support, and connection on this crucial topic. 
 
@@ -23,11 +23,16 @@ We invite you to join us on this journey of discovery, and we assure you that by
 
 ![invitation](assets/img/Accepting-the-Invitation.png)
 
+&nbsp;
 # The Dataset We Used
 We are using the dataset `YouNiverse`, a large collection of channel and video metadata from English-language YouTube presented by _Dr.Ribeiro_ and _Dr.West_. It comprises metadata for over 136k channels and 72.9M videos published between May 2005 and October 2019, as well as channel-level time-series data of weekly subscriber and
 view counts. 
 
 For your reference, you can check the dataset [HERE](https://doi.org/10.5281/zenodo.46500463). 
+
+
+
+&nbsp;
 # Mental Health: Trendy Problem?
 > RQ1: Is mental health a trend on YouTube?
 
@@ -37,13 +42,27 @@ Then it comes to September 2021, the COVID-19 pandemic has significantly impacte
 
 **But, it is already a trend before the pandemic?** Internet reflects people's life within a certain period. We found many videos about mental health on Youtube even before the pandemic. Therefore, we would like to focus on the them to get the answers. 
 
-## Data
+&nbsp;
 
-The data is YouNiverse, and
+## 1.1 Filter the Videos
 
-keyword filtering along with snow ball sampling to extract mental health videos,
+Before starting the analysis, we need to get videos about mental health. This is the core step in our data processing pipeline which target videos regarding `Mental Health` are retrieved for further processing and visualization. At the same time, we plan to retrieve videoes of other topics so that comparison can be made between different trends to further validate our hypothesis.
 
-Some of our keywords include: `"mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc.
+### 1.1.1 First Filter (keywords matching)
+
+The method we use to retrieve relevent videos is based on the string matching of keywords. The idea is that:
+
+1) We come up with a list of keywords  that is supposed to connect to the filed of mental health, including: `mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc.
+2) Since the dataset is extremely large, we read the files line by line and process them in a batch size of 200000. Three attributes are taken into account during processing, namely `description`, `tags` and `title`. If **at least two out of three text fields** contain a word in our designed word list, we assume that video is relevent and be retrieved. We adopt the function `pd.Dataframe.str.contains` to check the existence of the keywords.
+
+**Problem**: However, after the first filter and printing partial results, the problem is that many of them seems irrelevant to mental health like _The Lego Batman Movie | Batman's Lonely Life_. As a result, the first version of analysis results are not very satisfactory, and we get little information. To solve the problem, here comes to our second filter. 
+
+### 1.1.2 Second Filter (snow ball sampling)
+The basic idea is that: After retrieving, we check the results manually and see if there is any insightful words that occur in the result but is not included in our designed keyword list. If such word exists, we `iteratively add them to the list` and `repeat the process` 1-3 times to update the results until no new words can be found.
+
+It takes a long time to process through the data, so we cannot do the loop many times, further improvement on the topic may include improving keyword list quality, adopting stemming on words for better matching, etc.
+
+
 
 We ask the title of the video to contain such keywords, and at least one of th description and tag should contain as well.
 
@@ -58,7 +77,7 @@ Finally, our filtered result can be displayed as a wordcloud figure, with many k
 
 {% include samples.html %}
 
-## time trend
+## 1.2 Time Trend (compared with other topics)
 
 Seems pretty good, now we can display the number and the ratio of the mental health videos uploaded per month from 2006 to 2019. 
 
