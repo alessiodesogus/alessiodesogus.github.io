@@ -18,7 +18,7 @@ This phase of our investigation seeks to bridge the gap between quantitative dat
 
 ### Sentiment Analysis
 
-{% include ./sentiment/distribution_overall.html %}
+{% include distribution_overall.html %}
 
 
 
