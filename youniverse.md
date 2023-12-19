@@ -2,9 +2,9 @@
 layout: page
 title: Is YouTube Riding the Mental Health Wave? 
 subtitle: Deep dive into the YouTube Mental Health World 
-cover-img: /assets/img/header_2.png
-thumbnail-img: /assets/img/header_2.png
-share-img: /assets/img/header_2.png
+cover-img: /assets/img/header.png
+thumbnail-img: /assets/img/header.png
+share-img: /assets/img/header.png
 ---
 
 Let us start with some simple questions :） 
@@ -112,7 +112,7 @@ However, we do not want to immdediately jump to a conclusion that there's no tre
 
 ### 1.2.2 Compare with Other Topics
 
-First, we look at the upload **RATIO**. 
+First, let's look at the upload **RATIO**. 
 
 
 Remember our compared topics are : `gender equality` and `climate change`. We only plot their ratio throughout the years and put it into the log scales for a clearer comparison.
@@ -127,7 +127,7 @@ Ratio of the uploaded video number is not everything, what about the **POPULARIT
 
 {% include popular.html %}
 
-We can see that the ratio of the popularity score of mental health is higher than the other two topics. 
+We can see that the ratio of the popularity score of mental health is higher than the other two topics as well. 
 
 Thus, we can conclude that **mental health indeed is a trend compared to other representative topics**. 
 
