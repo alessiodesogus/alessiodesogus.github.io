@@ -171,6 +171,12 @@ And we can see `stress` is the most mentioned problem, followed by `suicide` and
 &nbsp;
 
 # What does the Trend Bring?
+In the above part, we talk about the mental health videos on YouTube. 
+
+Now, hold on for a while. The nature of the problem might depend on your perspecitve! Let's look at **how the target videos influence other videos and channels.**
+
+![perspective](assets/img/perspective.jpeg)
+
 ## 3.1 New Contents? 
 > RQ3: Is there an impact on new content?
 
