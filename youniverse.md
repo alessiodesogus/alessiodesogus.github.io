@@ -6,7 +6,7 @@ cover-img: /assets/img/header_.png
 thumbnail-img: /assets/img/header_.png
 share-img: /assets/img/header_.png
 ---
-<div style="text-align: justify"> 
+
 Let us start with some simple questions: 
 
 - Have you ever felt `pressure and depression` when there are so many deadlines?
@@ -20,7 +20,7 @@ In today's digital age, mental health has garnered paramount importance, and You
 Follow our story today and delve into our analysis! Explore together with us to get the answers: Are mental health discussions on the rise on YouTube? Let us examine deeply the trends, categories, and  evolution of channels and videos. 
 
 We invite you to join us on this journey of discovery, and we assure you that by the end you will unveil the platform's changing landscape and ave a better understanding of the ever-changing world of YouTube and the role mental health played within it.
- </div>
+
 
 
 ![invitation](assets/img/Accepting-the-Invitation.png)
@@ -124,7 +124,7 @@ Also, We hypothesize that maybe remaining a stable uploading ratio already means
 
 Ratio of the uploaded video number is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score of the videos:
 
- {% include the graph here %}
+// graph HERE
 
 We can see that the ratio of the popularity score of mental health is higher than the other two topics. 
 
@@ -146,7 +146,7 @@ To do this We divide the keywords into several groups to our best knowledge, and
 
 We count the frequency of `man`, `woman`, `teenager` and `senior`.
 
-{% include the graph here %}
+// graph HERE
 
 And see that throughout all the years: 
 
@@ -162,7 +162,7 @@ From a biological standpoint, for example, due to their brain’s wiring, women 
 ## 2.2 Topics
 Now, let's see the most mentioned category. 
 
-{% include the graph here %}
+// graph HERE
 
 And we can see `stress` is the most mentioned problem, followed by `suicide` and `depress`. They all show a similar trend of increase all these years.
 
