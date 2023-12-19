@@ -92,7 +92,7 @@ Aside from the target videos reagarding mental health, we also aim to retrieve v
 
 We would like to compare the trend of the three types of videos and see if any interesting conclusion may be drawn from the results.
 
-&nbsp;
+
 ## 1.2 Trend or not? 
 
 Now everything is ready! It is time to look at the time trend -- how much videos about mental health are uploaded per month and their growth over the years.
@@ -131,21 +131,22 @@ We can see that the ratio of the popularity score of mental health is higher tha
 
 Thus, we can conclude that **there is no significant increase in yearly uploading mental health videos**, but compared to other representative topics, **mental health indeed is a hot topic kept being discussed every year** and draw much attention. 
 
+&nbsp;
+
 # Characteristics: What it is talking?
 > RQ2: Which topics predominate in the mental health category?
 
 In this section ,we aim to delve deep inside the mental health videos and would like to study two problems:
-1) What is the most `frequently mentioned group of people`? Who suffers the most? 
+1) What is the most `frequently mentioned group of people`?  
 2) Among all the videos, what is the most `frequently mentioned mental issues`? Disorder or suicide, etc?
 3) Finally, throughout the years, do the situation varies?
 
 To do this, we divide the keywords into several groups to our best knowledge, and calculate their frequency according to their appearance in the mental health videos.
 
-&nbsp;
 
-## 2.1 Viewers
+## 2.1 Who suffers the most?
 
-We count the frequency of `man`, `woman`, `teenager` and `senior`.
+We count the frequency of `man`, `woman`, `teenager` and `senior` appeared in our target videos.
 
 {% include people.html %}
 
@@ -153,14 +154,13 @@ And see that throughout all the years:
 
 As for **age**, mental issues regarding `teenager` remains the biggest problem. It is because adolescence is a unique and formative time. Physical, emotional and social changes, including exposure to poverty, abuse, or violence, can make adolescents vulnerable to mental health problems. (but there could be cofounders like the access to Internet, teenagers therefore get more attention).  
 
-As for **gender**, `woman` is higher than `men`. There are many factors like biological makeup and experience in society that are thought to increase women’s vulnerability to mental health disorders.
+As for **gender**, `woman` is higher than men. There are many factors like biological makeup and experience in society that are thought to increase women’s vulnerability to mental health disorders.
 
 
 From a biological standpoint, for example, due to their brain’s wiring, women report higher levels of empathy and emotional understanding than men. These qualities, while generally positive, are closely tied to worsening depression, anxiety, and trauma. Women also have different experiences than men, in general, women are constantly up against societal expectations and pressures that can negatively impact their mental health. For example, women place great importance on their physical appearance – largely because society tells them to do so. 
 
-&nbsp;
 
-## 2.2 Topics
+## 2.2 What is suffered the most? 
 Now, let's see the most mentioned category. 
 
 {% include category.html %}
