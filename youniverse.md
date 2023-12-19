@@ -124,7 +124,7 @@ Also, We hypothesize that maybe remaining a stable uploading ratio already means
 
 Ratio of the uploaded video number is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score of the videos:
 
-// graph HERE
+{% include popular.html %}
 
 We can see that the ratio of the popularity score of mental health is higher than the other two topics. 
 
@@ -146,7 +146,7 @@ To do this We divide the keywords into several groups to our best knowledge, and
 
 We count the frequency of `man`, `woman`, `teenager` and `senior`.
 
-// graph HERE
+{% include people.html %}
 
 And see that throughout all the years: 
 
@@ -162,7 +162,7 @@ From a biological standpoint, for example, due to their brain’s wiring, women 
 ## 2.2 Topics
 Now, let's see the most mentioned category. 
 
-// graph HERE
+{% include category.html %}
 
 And we can see `stress` is the most mentioned problem, followed by `suicide` and `depress`. They all show a similar trend of increase all these years.
 
