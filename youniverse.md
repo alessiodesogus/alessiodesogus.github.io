@@ -124,4 +124,52 @@ Also, We hypothesize that maybe remaining a stable uploading ratio already means
 
 Ratio of the uploaded video number is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score of the videos:
 
- {% include distribution_popularity.html %}
+ {% include the graph here %}
+
+We can see that the ratio of the popularity score of mental health is higher than the other two topics. 
+
+Thus, we can conclude that **mental health indeed is a trend compared to other representative topics**. 
+
+# Characteristics of the Trend
+> RQ2: Which topics predominate in the mental health category?
+
+In this section ,we aim to delve deep inside the trend of mental health videos and would like to study two problems:
+1) What is the most frequently mentioned group of people? Their age and gender?
+2) Among all the videos, what is the most frequently mentioned mental issues? Is it `disorder` or `suicide`, etc?
+3) Finally, throughout the years, do the situation varies?
+
+To do this We divide the keywords into several groups to our best knowledge, and calculate their frequency according to their appearance in the mental health videos.
+
+## 2.1 Viewers
+
+We count the frequency of `man`, `woman`, `teenager` and `senior`.
+
+{% include the graph here %}
+
+And see that throughout all the years: 
+
+As for **age**, mental issues regarding `teenager` remains the biggest problem. It is because adolescence is a unique and formative time. Physical, emotional and social changes, including exposure to poverty, abuse, or violence, can make adolescents vulnerable to mental health problems. (but there could be cofounders like the access to Internet, teenagers therefore get more attention).  
+
+As for **gender**, `woman` is higher than `men`. There are many factors like biological makeup and experience in society that are thought to increase women’s vulnerability to mental health disorders.
+
+
+From a biological standpoint, for example, due to their brain’s wiring, women report higher levels of empathy and emotional understanding than men. These qualities, while generally positive, are closely tied to worsening depression, anxiety, and trauma. Women also have different experiences than men, in general, women are constantly up against societal expectations and pressures that can negatively impact their mental health. For example, women place great importance on their physical appearance – largely because society tells them to do so. 
+
+## 2.2 Topics
+Now, let's see the most mentioned category. 
+
+{% include the graph here %}
+
+And we can see `stress` is the most mentioned problem, followed by `suicide` and `depress`. They all show a similar trend of increase all these years.
+
+
+
+
+
+RQ3: Is there an impact on new content?
+
+
+RQ4: Did old channels (that were not speaking about mental health) start speaking about (i.e. followed the trends)?
+
+
+RQ5: Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
