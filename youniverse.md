@@ -2,9 +2,9 @@
 layout: page
 title: Is YouTube Riding the Mental Health Wave? 
 subtitle: Deep dive into the YouTube Mental Health World 
-cover-img: /assets/img/header.png
-thumbnail-img: /assets/img/header.png
-share-img: /assets/img/header.png
+cover-img: /assets/img/header_.png
+thumbnail-img: /assets/img/header_.png
+share-img: /assets/img/header_.png
 ---
 
 Let us start with some simple questions :） 
@@ -129,17 +129,17 @@ Ratio of the uploaded video number is not everything, what about the **POPULARIT
 
 We can see that the ratio of the popularity score of mental health is higher than the other two topics as well. 
 
-Thus, we can conclude that **mental health indeed is a trend compared to other representative topics**. 
+Thus, we can conclude that **there is no significant increase in yearly uploading mental health videos**, but compared to other representative topics, **mental health indeed is a hot topic kept being discussed every year** and draw much attention. 
 
-# Characteristics of the Trend
+# Characteristics: What it is talking?
 > RQ2: Which topics predominate in the mental health category?
 
-In this section ,we aim to delve deep inside the trend of mental health videos and would like to study two problems:
-1) What is the most frequently mentioned group of people? Their age and gender?
-2) Among all the videos, what is the most frequently mentioned mental issues? Is it `disorder` or `suicide`, etc?
+In this section ,we aim to delve deep inside the mental health videos and would like to study two problems:
+1) What is the most `frequently mentioned group of people`? Who suffers the most? 
+2) Among all the videos, what is the most `frequently mentioned mental issues`? Disorder or suicide, etc?
 3) Finally, throughout the years, do the situation varies?
 
-To do this We divide the keywords into several groups to our best knowledge, and calculate their frequency according to their appearance in the mental health videos.
+To do this, we divide the keywords into several groups to our best knowledge, and calculate their frequency according to their appearance in the mental health videos.
 
 &nbsp;
 
