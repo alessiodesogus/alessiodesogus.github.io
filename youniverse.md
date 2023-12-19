@@ -140,6 +140,8 @@ In this section ,we aim to delve deep inside the trend of mental health videos a
 
 To do this We divide the keywords into several groups to our best knowledge, and calculate their frequency according to their appearance in the mental health videos.
 
+&nbsp;
+
 ## 2.1 Viewers
 
 We count the frequency of `man`, `woman`, `teenager` and `senior`.
@@ -155,6 +157,8 @@ As for **gender**, `woman` is higher than `men`. There are many factors like bio
 
 From a biological standpoint, for example, due to their brain’s wiring, women report higher levels of empathy and emotional understanding than men. These qualities, while generally positive, are closely tied to worsening depression, anxiety, and trauma. Women also have different experiences than men, in general, women are constantly up against societal expectations and pressures that can negatively impact their mental health. For example, women place great importance on their physical appearance – largely because society tells them to do so. 
 
+&nbsp;
+
 ## 2.2 Topics
 Now, let's see the most mentioned category. 
 
@@ -163,13 +167,25 @@ Now, let's see the most mentioned category.
 And we can see `stress` is the most mentioned problem, followed by `suicide` and `depress`. They all show a similar trend of increase all these years.
 
 
+&nbsp;
+
+# What does the Trend Bring?
+## 3.1 Video Contents
+> RQ3: Is there an impact on new content?
 
 
 
-RQ3: Is there an impact on new content?
+&nbsp;
 
+## 3.2 Channels
+> RQ4: Did old channels followed the trends?
 
-RQ4: Did old channels (that were not speaking about mental health) start speaking about (i.e. followed the trends)?
+Did old channels that were not speaking about mental health start speaking about it?
 
+&nbsp;
 
-RQ5: Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
+## 3.3 Channel Performance
+> RQ5: For those following channels, does the trend have positive / negative impact on them? 
+
+Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
+
