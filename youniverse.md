@@ -171,21 +171,21 @@ And we can see `stress` is the most mentioned problem, followed by `suicide` and
 &nbsp;
 
 # What does the Trend Bring?
-## 3.1 Video Contents
+## 3.1 New Contents? 
 > RQ3: Is there an impact on new content?
 
 
 
 &nbsp;
 
-## 3.2 Channels
+## 3.2 Followers? 
 > RQ4: Did old channels followed the trends?
 
 Did old channels that were not speaking about mental health start speaking about it?
 
 &nbsp;
 
-## 3.3 Channel Performance
+## 3.3 Performance: What brings to followers?
 > RQ5: For those following channels, does the trend have positive / negative impact on them? 
 
 Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
