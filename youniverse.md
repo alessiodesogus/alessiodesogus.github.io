@@ -44,8 +44,6 @@ Then it comes to September 2021, the COVID-19 pandemic has significantly impacte
 
 **But, it is already a trend before the pandemic?** Internet reflects people's life within a certain period. We found many videos about mental health on Youtube even before the pandemic. Therefore, we would like to focus on the them to get the answers. 
 
-&nbsp;
-
 ## 1.1 Filter the Videos
 
 Before starting the analysis, we need to get videos about mental health. This is the core step in our data processing pipeline which target videos regarding `Mental Health` are retrieved for further processing and visualization. At the same time, we plan to retrieve videoes of other topics so that comparison can be made between different trends to further validate our hypothesis.
@@ -95,6 +93,8 @@ We would like to compare the trend of the three types of videos and see if any i
 ## 1.2 Time Trend Analysis
 
 Now everything is ready! It is time to look at the time trend -- how much videos about mental health are uploaded per month and their growth over the years.
+
+![invitation](assets/img/are-you-ready.gif)
 
 ### 1.2.1 Mental Health Trend
 Now we display the number and the ratio of the mental health videos uploaded per month from 2006 to 2019. 
