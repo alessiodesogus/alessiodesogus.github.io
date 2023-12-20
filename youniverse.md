@@ -173,11 +173,15 @@ And we can see `stress` is the most mentioned problem, followed by `suicide` and
 
 ### 2.3.1 Sentiment of the videos
 
-Let's examine the overall sentiment landscape of mental health videos. What do the sentiment scores, determined by the BERT model, reveal about these conversations? Are they more about delving into the complexities of mental health, or celebrating positive support and outcomes? The prevalence of high sentiment scores suggests that mental health discussions on YouTube are emotionally charged. This raises a question: does this intensity focus more on the complexities of mental health rather than just positive outcomes or support?
+Let's examine the overall sentiment landscape of mental health videos. 
+
+What do the sentiment scores, determined by the BERT model, reveal about these conversations? Are they more about delving into the complexities of mental health, or celebrating positive support and outcomes? 
 
 {% include distribution_time.html %}
 
-As time progresses, we notice a shift towards negative sentiment. What does this shift signify? Could it indicate a more honest and profound discussion about mental health issues? This evolving sentiment pattern might be a response to a growing demand for authenticity in mental health discussions, rather than a mere adaptation to trends. The consistent increase in negative sentiment over 14 years suggests a deeper, more meaningful change in how mental health is portrayed in digital media.
+As time progresses, we notice a shift towards negative sentiment. What does this shift signify? Could it indicate a more honest and profound discussion about mental health issues? 
+
+This evolving sentiment pattern might be a response to a growing demand for authenticity in mental health discussions, rather than mere trends. The consistent increase in negative sentiment over 14 years suggests a deeper, more meaningful change in how mental health is portrayed in digital media.
 
 Now, let's consider how sentiment scores correlate with popularity, defined by `popularity_score` = `view_count` + `like_count`. 
 
@@ -188,13 +192,13 @@ We have two interesting discoveries:
 1. At the lower end of the popularity spectrum, there is a notable stability in sentiment, with a subtle decreasing trend overall.
 2. As videos become more popular, their sentiment scores become more varied.
 
-* For the first observation, we can perform a linear regression analysis in the middle range. 
+For the first observation, we can perform a linear regression analysis in the middle range. 
 
 {% include distribution_popularity_regression.html %}
 
-There is a discernible downward trend in the average sentiment score. This gradual decline could indicate that creators with a larger audience may feel a responsibility to present a more multifaceted and perhaps less idealized view of mental health, aligning with a broader societal trend towards authenticity and acknowledgment of mental health complexities.
+There is a discernible downward trend in the average sentiment score. This gradual decline could indicate that creators with a larger audience may feel a responsibility to present a more multifaceted and perhaps less idealized view of mental health.
 
-* For the second observation, this variability in top videos suggests that more popular videos tend to polarize opinion. Maybe, this pattern comes from 
+For the second observation, this variability in top videos suggests that more popular videos tend to polarize opinion. Maybe, this pattern comes from 
 1. genuine desire to contribute to the destigmatization of mental health issue?
 2. a pursuit of popularity = trend-following? 
 
