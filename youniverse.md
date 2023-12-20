@@ -168,6 +168,52 @@ Now, let's see the most mentioned category.
 And we can see `stress` is the most mentioned problem, followed by `suicide` and `depress`. They all show a similar trend of increase all these years.
 
 
+
+## 2.3 What are the videos talking about?
+
+### 2.3.1 Sentiment of the videos
+
+Let's examine the overall sentiment landscape of mental health videos. What do the sentiment scores, determined by the BERT model, reveal about these conversations? Are they more about delving into the complexities of mental health, or celebrating positive support and outcomes? The prevalence of high sentiment scores suggests that mental health discussions on YouTube are emotionally charged. This raises a question: does this intensity focus more on the complexities of mental health rather than just positive outcomes or support?
+
+{% include distribution_time.html %}
+
+As time progresses, we notice a shift towards negative sentiment. What does this shift signify? Could it indicate a more honest and profound discussion about mental health issues? This evolving sentiment pattern might be a response to a growing demand for authenticity in mental health discussions, rather than a mere adaptation to trends. The consistent increase in negative sentiment over 14 years suggests a deeper, more meaningful change in how mental health is portrayed in digital media.
+
+Now, let's consider how sentiment scores correlate with popularity, defined by `popularity_score` = `view_count` + `like_count`. 
+
+{% include distribution_popularity.html %}
+
+We have two interesting discoveries:
+
+1. At the lower end of the popularity spectrum, there is a notable stability in sentiment, with a subtle decreasing trend overall.
+2. As videos become more popular, their sentiment scores become more varied.
+
+* For the first observation, we can perform a linear regression analysis in the middle range. 
+    {% include distribution_popularity_regression.html %}
+
+    There is a discernible downward trend in the average sentiment score. This gradual decline could indicate that creators with a larger audience may feel a responsibility to present a more multifaceted and perhaps less idealized view of mental health, aligning with a broader societal trend towards authenticity and acknowledgment of mental health complexities.
+
+* For the second observation, this variability in top videos suggests that more popular videos tend to polarize opinion. This pattern could be driven by a genuine desire to contribute to the destigmatization of mental health issues or a pursuit of popularity or trend-following. To understand what the popular videos are trying to deliver with such polarized sentiment score distributions, we may turn to topic detection analysis based on the LDA model.
+
+
+### 2.3.2 Topic keywords of the videos
+
+We focus on the top 1000 videos with the highest popularity scores, analyzing their titles to grasp the core topics, as titles can concisely summarize the videos' themes. 
+
+
+{% include lda_topic.html %}
+
+
+The analysis uncovers a range of topics. "Psychological," "tips," "love," and "disorders," found in Topics 2 and 6, suggest a serious exploration of mental health issues. These topics likely cover psychological advice, well-being tips, and discussions about mental health disorders, indicating a commitment to mental health education and support.
+
+Conversely, Topics 0, 1, 3, 5, 7, and 8 lean towards entertainment or lifestyle content. Words like "funny," "prank," "hacks," "giant," "experiment," and "sneak" imply a focus on engaging viewers with amusing or intriguing activities rather than mental health discussions. This could indicate a trend-following approach among some content creators, aiming to capitalize on popular themes to attract viewership.
+
+Finally, words like "desk," "zen," "garden," and "relieving" in Topic 9 hint at content focused on stress relief and relaxation techniques, relevant to mental health but in a more indirect, lifestyle-oriented manner.
+
+Our findings show that **while there is some content that may follow viewing trends with lighter themes, a significant portion of mental health videos is committed to more profound topics**. The gradual shift towards a more sober tone in descriptions and the emergence of weightier topics in video titles both point towards a digital environment that is **increasingly reflective of the real societal dialogue on mental health**.
+
+
+
 &nbsp;
 
 # What does the Trend Bring?
@@ -176,6 +222,12 @@ In the above part, we talk about the mental health videos on YouTube.
 Now, hold on for a while. The nature of the problem might depend on your perspecitve! Let's look at **how the target videos influence other videos and channels.**
 
 ![perspective](assets/img/perspective.jpeg)
+
+
+
+
+
+
 
 ## 3.1 New Contents? 
 > RQ3: Is there an impact on new content?
