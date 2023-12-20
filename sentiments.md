@@ -1,6 +1,6 @@
 ---
 layout: page
-title:Video Content Analysis
+title: Video Content Analysis
 subtitle:  
 cover-img: /assets/img/header_2.png
 thumbnail-img: /assets/img/header_2.png
@@ -56,8 +56,6 @@ For the second observation, this variability in top videos suggests that more po
 This pattern could be driven by a genuine desire to contribute to the destigmatization of mental health issues or a pursuit of popularity or trend-following. Let's have a deeper look in what topics those top videos are talking about.
 
 
-</div>
-
 
 
 
@@ -91,4 +89,4 @@ As we consider the overarching trends in sentiment and topic popularity, we may 
 
 Far from simply riding the waves of transient trends, the mental health conversation on platforms like YouTube is evolving into a space where real issues are confronted and discussed.
 
-The combined insights from sentiment analysis and topic detection weave a narrative affirming the growing maturity of discourse around mental health in digital media. This maturation reflects a conscious shift by content creators to acknowledge and address the complex realities of mental health, indicating a broader cultural movement towards openness and authenticity in the portrayal of mental health issues.
+In conclusion, the data from sentiment analysis and topic detection when considered together, weave a narrative that affirms the growing maturity of discourse around mental health in digital media. This maturation reflects a conscious shift by content creators to acknowledge and address the complex realities of mental health, indicating a broader cultural movement towards openness and authenticity in the portrayal of mental health issues.
