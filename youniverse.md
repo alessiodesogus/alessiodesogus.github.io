@@ -168,6 +168,67 @@ Now, let's see the most mentioned category.
 And we can see `stress` is the most mentioned problem, followed by `suicide` and `depress`. They all show a similar trend of increase all these years.
 
 
+
+## 2.3 What are the videos talking about?
+
+### 2.3.1 Sentiment of the videos
+
+Let's examine the overall sentiment landscape of mental health videos. 
+
+What do the sentiment scores, determined by the BERT model, reveal about these conversations? Are they more about delving into the complexities of mental health, or celebrating positive support and outcomes? 
+
+{% include distribution_time.html %}
+
+As time progresses, we notice a shift towards negative sentiment. What does this shift signify? Could it indicate a more honest and profound discussion about mental health issues? 
+
+This evolving sentiment pattern might be a response to a growing demand for authenticity in mental health discussions, rather than mere trends. The consistent increase in negative sentiment over 14 years suggests a deeper, more meaningful change in how mental health is portrayed in digital media.
+
+Now, let's consider how sentiment scores correlate with popularity, defined by `popularity_score` = `view_count` + `like_count`. 
+
+{% include distribution_popularity.html %}
+
+We have two interesting discoveries:
+
+1. At the lower end of the popularity spectrum, there is a notable stability in sentiment, with a subtle decreasing trend overall.
+2. As videos become more popular, their sentiment scores become more varied.
+
+For the first observation, we can perform a linear regression analysis in the middle range. 
+
+{% include distribution_popularity_regression.html %}
+
+There is a discernible downward trend in the average sentiment score. This gradual decline could indicate that creators with a larger audience may feel a responsibility to present a more multifaceted and perhaps less idealized view of mental health.
+
+For the second observation, this variability in top videos suggests that more popular videos tend to polarize opinion. Maybe, this pattern comes from 
+1. genuine desire to contribute to the destigmatization of mental health issue?
+2. a pursuit of popularity = trend-following? 
+
+To understand what the popular videos are trying to deliver with such polarized sentiment score distributions, we may turn to topic detection analysis based on the LDA model.
+
+
+### 2.3.2 Topic keywords of the videos
+
+We focus on the top 1000 videos with the highest popularity scores, analyzing their titles to grasp the core topics, as titles can concisely summarize the videos' themes. 
+
+
+{% include lda_topic.html %}
+
+
+The analysis uncovers a range of topics. Let's try to categorize them and analyze them.
+
+| Topic Numbers | Key Words Combined                                        | Combined Analysis                                                                                                                                                           |
+|---------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0, 1          | stories, real, eating, psychopath, psychological, hacks  | Focuses on personal narratives, real-life stories, and psychological insights, offering viewers relatable content that delves into personal experiences and mental phenomena. |
+| 2, 4          | mixing, satisfying, bought, store, giant, mesh, meditation| Centers on activities and practices related to well-being, stress relief, and meditation, providing viewers with practical self-care methods.                                |
+| 3, 5          | left, live, kids, bags, squish, old, open, puppy          | Appears to blend discussions on mental health with aspects of family life, learning, and aging, reflecting the pervasive nature of mental health across various life domains.|
+| 6, 9          | open, school, supplies, sneak, psychology, vs, kids       | Likely involves educational content and psychological experiments, aiming to raise awareness about mental health issues, especially among younger audiences.                 |
+| 7, 8          | psychological, super, illness, mental, old, brain         | Indicates a focus on more serious aspects of mental health, including illness, therapy, and psychological theories, addressing mental health issues in a substantive manner. |
+
+
+
+Our findings show that **while there is some content that may follow viewing trends with lighter themes, a significant portion of mental health videos is committed to more profound topics**. The gradual shift towards a more sober tone in descriptions and the emergence of weightier topics in video titles both point towards a digital environment that is **increasingly reflective of the real societal dialogue on mental health**.
+
+
+
 &nbsp;
 
 # What does the Trend Bring?
@@ -176,6 +237,12 @@ In the above part, we talk about the mental health videos on YouTube.
 Now, hold on for a while. The nature of the problem might depend on your perspecitve! Let's look at **how the target videos influence other videos and channels.**
 
 ![perspective](assets/img/perspective.jpeg)
+
+
+
+
+
+
 
 ## 3.1 New Contents? 
 > RQ3: Is there an impact on new content?
