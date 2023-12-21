@@ -185,6 +185,8 @@ With this informations, we can consider all the channel with at least one mental
 
 {% include histogram_delta_views_before_after.html %}
 
+We can the histogram of these two values all over the channels, using a logarithmic y axis.
+
 
 &nbsp;
 
