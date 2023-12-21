@@ -7,81 +7,70 @@ thumbnail-img: /assets/img/header_.png
 share-img: /assets/img/header_.png
 ---
 
-Let us start with some simple questions :） 
+- Deadlines coming! Have you ever felt _stressful, anxious or even depressed_?
 
-- Have you ever felt `pressure and depression` when there are so many deadlines?
+- Have you ever _posted your pressure on YouTube_, or simply seek guidance from _videos talking about mental problems_ on the platform? 
 
-- Have you ever seen any `videos talking about mental health` when surfring online on Youtube? 
+- Do you know there are growing amount of discussions about mental health on Youtube?
 
-- There are tons of discussions around mental health on Youtube. Have you ever wondered how they `shape the platform’s content and channel landscape`? 
+- What are they like? How many talk about them? How they influence today's channel content?
 
-In today's digital age, mental health has garnered paramount importance, and YouTube has emerged as a significant platform for seeking information, support, and connection on crucial topic. 
-
-Follow our story today and delve into our analysis! Explore together with us to get the answers: **Are mental health discussions on the rise on YouTube?** Let us examine deeply the trends, categories, and  evolution of channels and videos. 
-
-We invite you to join us on this journey of discovery, and we assure you that by the end you will unveil the platform's changing landscape and ave a better understanding of the ever-changing world of YouTube and the role mental health played within it.
-
+Follow our analysis and find out! Explore together with us to see the answers. Our main goal is to __look for the trend, track their contents and see the channels response toward it__. 
 
 
 ![invitation](assets/img/Accepting-the-Invitation.png)
 
 &nbsp;
 # The Dataset We Used
-We are using the dataset `YouNiverse`, a large collection of channel and video metadata from English-language YouTube presented by _Dr.Ribeiro_ and _Dr.West_. It comprises metadata for over 136k channels and 72.9M videos published between May 2005 and October 2019, as well as channel-level time-series data of weekly subscriber and
-view counts. 
-
-For your reference, you can check the dataset [HERE](https://doi.org/10.5281/zenodo.46500463). 
-
+We are using the dataset [YouNiverse](https://doi.org/10.5281/zenodo.46500463), a large collection of channel and video metadata from English-language YouTube presented by _Dr.Ribeiro_ and _Dr.West_. It comprises metadata for over 136k channels and 72.9M videos published between May 2005 and October 2019, as well as channel-level time-series data of weekly subscriber and view counts.  
 
 
 &nbsp;
 # Mental Health: Trendy Problem?
-> RQ1: Is mental health a trend on YouTube?
+<!-- > RQ1: Is mental health a trend on YouTube? -->
 
-We all know that `Mental Health` is not a new topic today. At the beginning of 21st Century, one in four adults in US suffered from some form of mental illness -— nearly 60 million Americans in any given year _(Agency for Healthcare Research and Quality, 2009)_. 
+`Mental Health` has never been a new topic: as early as the beginning of 21st Century, one in four adults in US suffered from mental illness -- that is nearly 60 million Americans in any given year _(Agency for Healthcare Research and Quality, 2009)_. However, not many of us paid serious attention to such problem. It all starts to change in September 2021, the year COVID-19 pandemic broke out, when things gets paticularly bad and the word mental health has become a publicly aware problem. According to the World Health Organization (WHO), because of the lockdown and economic setbacks, cases of anxiety and depression have `increased by 25%` globally, with suicide the second leading cause of death among 15-29-year-olds. Approximately `one in five people` in post-conflict settings have a mental health condition. 
 
-Then it comes to September 2021, the COVID-19 pandemic has significantly impacted mental health worldwide. The problem got much worse and went into the public sight again after the outbreak of the pandemic. According to the **World Health Organization (WHO)**, cases of anxiety and depression have `increased by 25%` globally since the pandemic began, with suicide the second leading cause of death among 15-29-year-olds. Approximately `one in five people` in post-conflict settings have a mental health condition.
-
-**But, it is already a trend before the pandemic?** Internet reflects people's life within a certain period. We found many videos about mental health on Youtube even before the pandemic. Therefore, we would like to focus on the them to get the answers. 
+**Is it already a trend before the pandemic?** Internet reflects people's life within a certain period. We found many videos about mental health on Youtube even before the pandemic. Therefore, we would like to focus on the them to get the answers. 
 
 ## 1.1 How to Get Target Videos?
 
 Before starting the analysis, we need to get videos about mental health first! At the same time, we plan to retrieve videoes of other topics so that comparison can be made between different trends to further validate our hypothesis.
 
-### 1.1.1 First Filter (keywords matching)
+### 1.1.1 Snow ball sampling based on keywords
 
 The method we use is based on the string matching of keywords. The idea is that:
 
-1) We come up with a list of keywords  that is supposed to connect to the filed of mental health, including: `mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc.
+1) We come up with a list of keywords  that is supposed to connect to the filed of mental health, including: `mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc. Particularly, we examine the three text columns of the metadata, namely `description`, `tags` and `title` and require **at least two out of three text fields** contain such a word in our designed word list, then we can assume that this video is relevent and be retrieved.
 
-2) Since the dataset is extremely large, we read the files line by line and process them in a batch size of 200000. Three attributes are taken into account during processing, namely `description`, `tags` and `title`. If **at least two out of three text fields** contain a word in our designed word list, we assume that video is relevent and be retrieved. 
+2) However, the initial keywords list may not be comprehensive. So it is necessary for us to look at the results and iteratively add new representative words to complete the list. The process is just like making a snowball! Here, some of the words we added include `sociopath`, `psycho`, etc.
 
-**Problem**: However, after the first filter and printing partial results, the problem is that many of them seems irrelevant to mental health like _The Lego Batman Movie: Batman's Lonely Life_. As a result, the first version of analysis results are not very satisfactory, and we get little information. To solve the problem, here comes to our second filter. 
+Seems nice! However, after this step we print out the results and find many of retrieved videos seems irrelevant at all, such as _The Lego Batman Movie: Batman's Lonely Life_. It seems that it is only logical to perform a tighter filter and elinate the undesired records.
 
 ![problem](assets/img/fixproblem.png)
 
-### 1.1.2 Second Filter (snow ball sampling)
+### 1.1.2 Filter based on video category and eliminate unnecessary keywords
 Here comes the solution. We have done several additional filtering aiming for a more desired outcome.
 
-1) After retrieving, we check the results manually and see if there is any insightful words that occur in the result but is not included in our designed keyword list. If such word exists, we `iteratively add them to the list` and `repeat the process` 1-3 times to update the results until no new words can be found, just like snowball!  
+<!-- 1) After retrieving, we check the results manually and see if there is any insightful words that occur in the result but is not included in our designed keyword list. If such word exists, we `iteratively add them to the list` and `repeat the process` 1-3 times to update the results until no new words can be found, just like snowball!   -->
 
-2) We require that in the `title` of the video, at least one of keywords should exist, which is tighter than the `two out of three requirement` above.
+- We addtional require that in the `title` of the video, at least one of keywords should exist, which is tighter than the `two out of three requirement` above.
 
-3) We eliminate some videos belonging to categories like `Music`, `Movie` since we inspect the content of the videos and most of them are false positive.
+- We eliminate some videos belonging to categories like `Music`, `Movie` since we inspect the content of the videos and most of them are false positive.
 
-4) Specifically for `mental health` videos, we filter some of the undesired contents based on keywords like `monkey`, `malone`, for they show little relevance to the topic.
+- Specifically for `mental health` videos, we filter some of the undesired contents based on keywords like `monkey`, `malone`, for they show little relevance to the topic.
 
-5) Finally, use a wordcloud figure and display our final results to validate the results we obtained so far.
+Now lets see some of our results:
 
 {% include samples.html %}
 
 ![wordcloud](assets/img/wordcloud.png)
 
-It is easy to find out that now after the improvement, our final results are much more relevant and convincing 🎉! 
+Great! Our final results are now much more relevant and convincing 🎉, and we are ready to step into the next step! 
 
-**Further Improvement**: It takes a long time to process through the data, so we cannot do the loop many times. However, further filter on the topic may include improving keyword list quality, adopting stemming on words for better matching, etc.
+<!-- **Further Improvement**: It takes a long time to process through the data, so we cannot do the loop many times. However, further filter on the topic may include improving keyword list quality, adopting stemming on words for better matching, etc. -->
 
-### 1.1.3 Control Group
+<!-- ### 1.1.3 Control Group
 Aside from the target videos reagarding mental health, we also aim to retrieve videos of **three representative types**:
 
 - Long-term trendy videos: This type of videos is the result of a long-term social trend, reflecting the raising awareness of some profound topics, e.g. `gender equality`, `climate change`. These topics enjoy a long-lasting attention and a steady increase in terms of YouTube videos. We hypothesize that `mental health` should belongs to such topic.
@@ -90,7 +79,7 @@ Aside from the target videos reagarding mental health, we also aim to retrieve v
 
 - Control group videos: This type of videos had not been brought to the spot of light during 2015-2019, but nonetheless we may still observe a growth in the number of videos on YouTube because the user growth and prevelant influence of digitilization.
 
-We would like to compare the trend of the three types of videos and see if any interesting conclusion may be drawn from the results.
+We would like to compare the trend of the three types of videos and see if any interesting conclusion may be drawn from the results. -->
 
 
 ## 1.2 Trend or not? 
