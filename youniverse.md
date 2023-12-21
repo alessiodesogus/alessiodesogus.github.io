@@ -179,7 +179,11 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 
 ## 3.1 New Contents? 
 > RQ3: Is there an impact on new content?
+Until now, we try to identify the possible videos related mental health, how this category behaves with respect to others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations and subscribers of a channel are affected after uploading a mental health video?
+To answer this question, we can now make use of the behaviour of the visualizations and subscribers of each channel over time. Particularly we have available a sampling of these two quantities every week.
+With this informations, we can consider all the channel with at least one mental health video uploaded, and identigy the week in which the channel has uploaded this video. By the studying the week gaining in views and subs before and after this video, we can study these two quantities for every channel and search for significant differences.
 
+{% include histogram_delta_views_before_after.html %}
 
 
 &nbsp;
@@ -189,7 +193,7 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 
 Did old channels that were not speaking about mental health start speaking about it?
 
-THIS IS A PROVA DAJEEEEE
+
 
 &nbsp;
 
