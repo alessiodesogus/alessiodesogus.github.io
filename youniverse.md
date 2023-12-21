@@ -15,7 +15,7 @@ share-img: /assets/img/header_.png
 
 - What are they like? How many talk about them? How they influence today's channel content?
 
-Follow our analysis and find out! Explore together with us to see the answers. Our main goal is to __look for the trend, track their contents and see the channels response toward it__. 
+Follow our analysis and find out! Centered on the topic of mental health on YouTube, our main goal is to __look for the trend, track their contents and see the channels response toward it__. 
 
 
 ![invitation](assets/img/Accepting-the-Invitation.png)
@@ -26,20 +26,24 @@ We are using the dataset [YouNiverse](https://doi.org/10.5281/zenodo.46500463), 
 
 
 &nbsp;
-# Mental Health: Trendy Problem?
+# Mental Health: is it trendy?
 <!-- > RQ1: Is mental health a trend on YouTube? -->
 
 `Mental Health` has never been a new topic: as early as the beginning of 21st Century, one in four adults in US suffered from mental illness -- that is nearly 60 million Americans in any given year _(Agency for Healthcare Research and Quality, 2009)_. However, not many of us paid serious attention to such problem. It all starts to change in September 2021, the year COVID-19 pandemic broke out, when things gets paticularly bad and the word mental health has become a publicly aware problem. According to the World Health Organization (WHO), because of the lockdown and economic setbacks, cases of anxiety and depression have `increased by 25%` globally, with suicide the second leading cause of death among 15-29-year-olds. Approximately `one in five people` in post-conflict settings have a mental health condition. 
 
-**Is it already a trend before the pandemic?** Internet reflects people's life within a certain period. We found many videos about mental health on Youtube even before the pandemic. Therefore, we would like to focus on the them to get the answers. 
+**Is there a sign already showing the trend of mental health before the pandemic?** YouTube has been serving as a mirror reflecting people's life within a certain period. So we focus on the time from 2006 to 2019 to look for the answers.
 
-## 1.1 How to Get Target Videos?
+<!-- We found many videos about mental health on Youtube even before the pandemic. Therefore, we would like to focus on the them to get the answers.  -->
 
-Before starting the analysis, we need to get videos about mental health first! At the same time, we plan to retrieve videoes of other topics so that comparison can be made between different trends to further validate our hypothesis.
+## 1.1 How do we acquire target videos?
+
+<!-- Before starting the analysis, we need to get videos about mental health first! At the same time, we plan to retrieve videoes of other topics so that comparison can be made between different trends to further validate our hypothesis. -->
+
+Everything starts with data! How can we retrieve the desired mental health videos from millions of YouTube entries?
 
 ### 1.1.1 Snow ball sampling based on keywords
 
-The method we use is based on the string matching of keywords. The idea is that:
+The retrievel method is based on the string matching of keywords. The idea is that:
 
 1) We come up with a list of keywords  that is supposed to connect to the filed of mental health, including: `mental health`, `disorder`, `solitude`, `depress`, `stress`, `suicid`, etc. Particularly, we examine the three text columns of the metadata, namely `description`, `tags` and `title` and require **at least two out of three text fields** contain such a word in our designed word list, then we can assume that this video is relevent and be retrieved.
 
@@ -81,44 +85,28 @@ Aside from the target videos reagarding mental health, we also aim to retrieve v
 
 We would like to compare the trend of the three types of videos and see if any interesting conclusion may be drawn from the results. -->
 
-
-## 1.2 Trend or not? 
-
-Now everything is ready! It is time to look at the time trend -- how much videos about mental health are uploaded per month and their growth over the years.
-
 ![invitation](assets/img/are-you-ready.gif)
 
-### 1.2.1 Mental Health Videos
-Now we focus on the mental health videos uploaded per month from 2006 to 2019. 
+## 1.2 What does data say?
 
-We display both video `numbers` and `ratios` throughout the year and applied a `linear regression analysis` to analyze if there is a trend. 
+### 1.2.1 New videos
+
+Numbers matter! -- We closely investigate how many videos about mental health are uploaded per month over the years to examine if there is a trend at all. In the plot, we display both the `absolute numbers` and `ratios with respect to all videos uploaded that month` throughout the year and applied `linear regression` to fit the data.  Hmmm, it seems there is a mild growing trend! But, wait a second, are you sure? -- To examine the validity, we look at p-value of the LR analysis and it is __0.109__, indicateing that the relation is not statistically significant. To this end, **we couldn't conclude any significant increase of the numbers and ratios regarding mental health videos.**
 
 {% include ratio.html %}
 
-Althought we do see **a mild upward trend**, the p-value of the LR analysis indicates the relation is not statistically significant. To this end, **we couldn't demonstrate any significant increase of the uploaded mental health videos.**
-
-However, we do not want to immdediately jump to a conclusion that there's no trend for the uploaded videos at all. What about other socially important topics? What are their performance throughout years? So, we make comparison with their trend as well, which is illustrated below:
-
-### 1.2.2 Compare with Other Topics
-
-First, let's look at the upload **RATIO**. 
-
-
-Remember our compared topics are : `gender equality` and `climate change`. We only plot their ratio throughout the years and put it into the log scales for a clearer comparison.
+However, we do not want to immdediately jump to a conclusion that there's no trend for the uploaded videos at all. What about other socially important topics? What are their performance throughout years? So, we make comparison with their trend as well. Specificaly, we choose `gender equality` and `climate change` as our compared topics, two other important social issues receiving growing attention. We plot their respective ratio throughout the years and put it into the log scales for a clearer comparison. It is rather surprising to see that none of the comparing trends shows a dramatic increase for their ratios. Nonetheless, **mental health issues receives more attention than the comparing topics**.
 
  {% include comparison.html %}
 
-It is rather surprising to see that none of the comparing trends shows a dramatic increase for their ratios. Nonetheless, **mental health issues receives more attention than the comparing topics**.
+Maybe... We hypothesize that remaining a stable uploading ratio already means a sustained and consistent attention indicating it is one of the social trend. The upward trend doesn't show because the ranges of videos on YouTube are increasingly explored making the total numbers of videos rises comparably faster than videos from the specific topic.
 
-Also, We hypothesize that maybe remaining a stable uploading ratio already means a sustained and consistent attention indicating it is one of the social trend. The upward trend doesn't show because the ranges of videos on YouTube are increasingly explored making the total numbers of videos rises comparably faster than videos from the specific topic.
-
-Ratio of the uploaded video number is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score of the videos:
+### 1.2.1 Popular?
+Numbers is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score with respect to the added popularity_score of the videos: Still no trend, but more: We can see that the ratio of the popularity score of mental health is higher than the other two topics as well. 
 
 {% include popular.html %}
 
-We can see that the ratio of the popularity score of mental health is higher than the other two topics as well. 
-
-Thus, we can conclude that **there is no significant increase in yearly uploading mental health videos**, but compared to other representative topics, **mental health indeed is a hot topic kept being discussed every year** and draw much attention. 
+Thus, we reach a conclusion that **there is no significant increase in yearly uploading mental health videos**, but compared to other representative topics, **mental health indeed is a hot topic kept being discussed every year** and draw much attention. 
 
 &nbsp;
 
