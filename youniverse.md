@@ -156,7 +156,7 @@ What do the sentiment scores, determined by the BERT model, reveal about these c
 
 {% include distribution_time.html %}
 
-As time progresses, we notice a shift towards negative sentiment. What does this shift signify? Could it indicate a more honest and profound discussion about mental health issues? 
+As time progresses, we notice a shift towards negative sentiment. What does this shift signify? 
 
 This evolving sentiment pattern might be a response to a growing demand for authenticity in mental health discussions, rather than mere trends. The consistent increase in negative sentiment over 14 years suggests a deeper, more meaningful change in how mental health is portrayed in digital media.
 
@@ -177,14 +177,14 @@ There is a discernible downward trend in the average sentiment score. This gradu
 
 For the second observation, this variability in top videos suggests that more popular videos tend to polarize opinion. Maybe, this pattern comes from 
 1. genuine desire to contribute to the destigmatization of mental health issue?
-2. a pursuit of popularity = trend-following? 
+2. a pursuit of popularity => trend-following? 
 
 To understand what the popular videos are trying to deliver with such polarized sentiment score distributions, we may turn to topic detection analysis based on the LDA model.
 
 
 ### 2.3.2 Topic keywords of the videos
 
-We focus on the top 1000 videos with the highest popularity scores, analyzing their titles to grasp the core topics, as titles can concisely summarize the videos' themes. 
+We focus on the top 500 videos with the highest popularity scores, analyzing their titles to grasp the core topics, as titles can concisely summarize the videos' themes comparing to the description parts with some irrelevant information like URL.
 
 
 {% include lda_topic.html %}
