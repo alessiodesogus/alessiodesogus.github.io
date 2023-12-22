@@ -239,7 +239,7 @@ We just conclude that when channels upload their first mental health video can s
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=wC36qA9gVNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[![Watch the video](https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg)](https://www.youtube.com/watch?v=wC36qA9gVNA)
+[![Watch the video](https://img.youtube.com/vi/wC36qA9gVNA/hqdefault.jpg)](https://www.youtube.com/watch?v=wC36qA9gVNA)
 
 
 <!-- ![YouTube](https://www.youtube.com/embed/wC36qA9gVNA) -->
