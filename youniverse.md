@@ -220,16 +220,11 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 
 
 
-## 3.1 New Contents? 
-> RQ3: Is there an impact on new content?
-
-I would remove this
-
 
 
 &nbsp;
 
-## 3.2  Performance: What brings to followers?
+## 3.1  Performance: What brings to followers?
 > RQ4: Did old channels followed the trends?
 
 Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
@@ -259,15 +254,19 @@ By then considering the channels with the more significant gains, we can analyze
 
 &nbsp;
 
-## 3.3  Followers?
+## 3.2  Followers?
 > RQ5: For those following channels, does the trend have positive / negative impact on them? 
 
 
 Did old channels that were not speaking about mental health start speaking about it?
 
 
-By analizign the time series of the weekly change in views, we idenfied one particular channel really symbolic for the type of information we want to search for answering this question.
+By analizign the time series of the weekly change in views, we idenfied one particular channel really symbolic for the type of information we want to search for answering this question. This channel is "Sammy-Marie Grimm", that starts by posting videos about free-time and vlogs, and once in a while, it publishes a mental health related video, in which it gains a more significant amount of views with respect to its standards.
 
 {% include histogram_deltas_signi.html %}
 
+
+As we can see over time, the number of updated mental health video increases over time, in particular in span of time period. By then considering the number of updated video in a time windows of 10 weeks, we obtain the following figure, for the same channel.
+
+{% include selected_channel_time_series_windows.html %}
 
