@@ -207,7 +207,7 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 
 
 &nbsp;
-## 4.1  Performance: What brings to followers?
+## 4.1  Performance: What brings more views?
 
 Until now, we try to identify the possible videos related to mental health, how this category behaves with respect to the others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations (views) and subscribers (subs) of a channel are affected after uploading a mental health video?
 To answer this question, we can now make use of the behaviour of the `views` and `subs` of each channel over time. 
@@ -235,7 +235,7 @@ By then considering the channels with the `more significant gains`, we can analy
 This can make us say that the statistical different in views does `not seem to be so important` to allow us to conclude that uploading a mental health video as a direct effect on the channel performance. But it opens up to then analyze the quantity of mental health channel, after the first upload... (see next section)
 
 &nbsp;
-## 4.2  Followers?
+## 4.2  Supply & demand: uploading more mental health videos
 We just conclude that when channels upload their first mental health video, we can statistically see a abnormal gain in visualization but this is not so strong to be analyzed singularly. Maybe we can take a step back, and analyze the `number` of mental health videos uploaded over time: if there is a positive trend of it, it can mean that the audience is demanding for more mental health video by their favorite youtuber. Like for an economic system, the `demand` is adressed by a `supply`: in this case, increasing the number of mental health content and eventually `turn into a mental health related channel`.
 
 [![Watch the video](https://img.youtube.com/vi/wC36qA9gVNA/hqdefault.jpg)](https://www.youtube.com/watch?v=wC36qA9gVNA)
@@ -253,4 +253,12 @@ We can calculate for each channel this quantity and, throughout a `Mann-Kendall 
 This is notable because it means that, in general, the identified channels talking about mental health will upload more video, given a local time span. Notice that this time span, with respect to the research done before for yearly uploading, wants to measure more locally if more videos about mental health, by channel, are uploaded and this seems to be the case!
 
 
+# Conclusion
+We first try to find all the `relevant mental health videos` among the 72.9M videos available. Once found those, we analyze their uploading over the years and successfully conclude that there is a mild yet `significant increase` of their numbers and ratios. 
+
+Then, we take a deeper look into the `predominant topics` and  examine the `intersection between people categories` and these topics to conclude that, by age, teenagers and by gender, `women` are the most vulnerable groups affected especially by `stress` and `depression`.
+
+Also, through `sentiment analysis`, we observe a dual nature in mental health content: some align with lighter trends, while a `significant portion` delves into `profound topics`. This shift towards more serious discussions, evident in video titles and descriptions, reflects a growing alignment between digital content and real societal dialogue on mental health.
+
+Eventually, we study in details the time pattern of `views` and `subs` for all the channels, concluding that uploading a mental health video gives a `significant gain` in `views`, but hardly visible at a non-global scale. From this, we examine the number of mental health uploading in a `specific window of time`, discovering an `increase over time`. This can be interpret either by genuine interest in this topic or by a more down-to-earth trend following.  
 
