@@ -217,7 +217,7 @@ Particularly we have available a sampling of these two quantities for every week
 {% include histogram_delta_views_before_after.html %}
 
 We can see the histograms of these two quantities: the gaining before the mental health video all over the channels, i.e. `delta_before`, and the gaining after the mental health video all over the channels, i.e. `delta_after`, using a logarithmic y axis. Already at first glimpse, we can understand that the histogram made by the delta views after the mental health video upload seems more shifted to the right, with respect to the increament of the week before the mental health video. Indeed, comparing these two with a t-test, the difference between the two histograms is `statistical significant`!
-We can apply the same reasoning for subs, obtaining the following figure.
+We can apply the same reasoning for subs, obtaining the following figure:
 
 {% include histogram_delta_subs_before_after.html %}
 
