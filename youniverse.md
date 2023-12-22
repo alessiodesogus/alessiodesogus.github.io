@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Is YouTube Riding the Mental Health Wave? 
-subtitle: Deep dive into the YouTube Mental Health World 
+subtitle: Deep-dive into the YouTube Mental Health World 
 cover-img: /assets/img/header_2.png
 thumbnail-img: /assets/img/header_2.png
 share-img: /assets/img/header_2.png
@@ -22,7 +22,7 @@ Follow our analysis and find out! Centered on the topic of mental health on YouT
 
 &nbsp;
 # The Dataset We Used
-We are using the dataset [YouNiverse](https://doi.org/10.5281/zenodo.46500463), a large collection of channel and video metadata from English-language YouTube presented by _Dr.Ribeiro_ and _Dr.West_. It comprises metadata for over 136k channels and 72.9M videos published between May 2005 and October 2019, as well as channel-level time-series data of weekly subscriber and view counts.  
+We are using the dataset [YouNiverse](https://github.com/epfl-dlab/YouNiverse), a large collection of channel and video metadata from English-language YouTube presented by _Dr.Ribeiro_ and _Dr.West_. It comprises metadata for over 136k channels and 72.9M videos published between May 2005 and October 2019, as well as channel-level time-series data of weekly subscriber and view counts.  
 
 
 &nbsp;
@@ -235,14 +235,7 @@ By then considering the channels with the more significant gains, we can analyze
 ## 4.2  Followers?
 We just conclude that when channels upload their first mental health video can statistically see a upnormal gain in visualization but this is not so strong to be analyzed singularly. Maybe we can take a step back, and analyze the `number` of mental health videos uploaded over time: if there is a positive trand of this, it can mean that either people demand for more mental health video by their favorite youtube, and so this is taken into account by increasing this number and eventually turn into a "mental health" channel.
 
-<div style="text-align:center;justify-content:center">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wC36qA9gVNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 [![Watch the video](https://img.youtube.com/vi/wC36qA9gVNA/hqdefault.jpg)](https://www.youtube.com/watch?v=wC36qA9gVNA)
-
-
-<!-- ![YouTube](https://www.youtube.com/embed/wC36qA9gVNA) -->
 
 In particular, by analizing the time series of the weekly change in views, we idenfied one significant channel really symbolic for the type of information we want to search for answering this question. This channel is "Sammy-Marie Grimm", that starts by posting videos about free-time and vlogs, and once in a while, it publishes a mental health related video, in which it gains a more significant amount of views with respect to its standards.
 
