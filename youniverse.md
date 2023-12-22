@@ -216,12 +216,12 @@ Particularly we have available a sampling of these two quantities for every week
 
 {% include histogram_delta_views_before_after.html %}
 
-We can see the histograms of these two quantities: the gaining before the mental health video all over the channels, i.e. `delta_before`, and the gaining after the mental health video all over the channels, i.e. `delta_after`, using a logarithmic y axis. Already at first glimpse, we can understand that the histogram made by the delta views after the mental health video upload seems more shifted to the right, with respect to the increament of the week before the mental health video. Indeed, comparing these two with a t-test, the difference between the two histograms is `statistical significant`!
+We can see the histograms of these two quantities: the gaining before the mental health video all over the channels, i.e. `delta_before`, and the gaining after the mental health video all over the channels, i.e. `delta_after`, using a logarithmic y axis. Already at first glimpse, we can understand that the histogram made by the delta views after the mental health video upload seems more shifted to the right, with respect to the increament of the week before the mental health video. Indeed, comparing these two with a `t-test`, the difference between the two histograms is `statistical significant`!
 We can apply the same reasoning for subs, obtaining the following figure:
 
 {% include histogram_delta_subs_before_after.html %}
 
-Here the two histograms look more similars one with respect to the other and in fact, performing again a t-test between them, there are no significant differences between one another.
+Here the two histograms look more similars one with respect to the other and in fact, performing again a `t-test` between them, there are no significant differences between one another.
 These first results can be intepreted by thinking that the first mental health video uploaded by a channel can have contribuated with an abnormal gain in views for a week, but in general it has not shifted by that much, the equilibrium of the channel, by looking at the subscribers, a more stable source of information for identifying the success of a channel.
 But in general we can dig more into these results. Focusing in particular on the views, we can try to find the mental health videos for which the gaining in views is more significant and then study in detail the time series of the channels for which this happens. We can for example filter the most important mental health video by taking just the one that gives a gain over a certain threashold. We can graphically see the different gaining for each channel, before and after the mental health video, highlighting the most significant ones, in the following figure.
 
