@@ -2,9 +2,9 @@
 layout: page
 title: Is YouTube Riding the Mental Health Wave? 
 subtitle: Deep dive into the YouTube Mental Health World 
-cover-img: /assets/img/header_.png
-thumbnail-img: /assets/img/header_.png
-share-img: /assets/img/header_.png
+cover-img: /assets/img/header_2.png
+thumbnail-img: /assets/img/header_2.png
+share-img: /assets/img/header_2.png
 ---
 
 - Deadlines coming! Have you ever felt _stressful, anxious or even depressed_?
@@ -64,13 +64,15 @@ Here comes the solution. We have done several additional filtering aiming for a 
 
 - Specifically for `mental health` videos, we filter some of the undesired contents based on keywords like `monkey`, `malone`, for they show little relevance to the topic.
 
-Now lets see some of our results:
+Now lets see some of our samples:
 
 {% include samples.html %}
 
+Seems that there are still some noisy data included inside, but the majority of the videos are focusing on mental health now. Seems like a good result. Let's use a wordcloud figure to see their tags:
+
 ![wordcloud](assets/img/wordcloud.png)
 
-Great! Our final results are now much more relevant and convincing 🎉, and we are ready to step into the next step! 
+Great! Most of the tags are mental health related! Now the results are much more relevant and convincing 🎉, and we are ready to step into the next step! 
 
 ![invitation](assets/img/are-you-ready.gif)
 
@@ -191,9 +193,7 @@ The analysis uncovers a range of topics. Let's try to categorize them and analyz
 | 7, 8          | psychological, super, illness, mental, old, brain         | Indicates a focus on more serious aspects of mental health, including illness, therapy, and psychological theories, addressing mental health issues in a substantive manner. |
 
 
-
 Our findings show that **while there is some content that may follow viewing trends with lighter themes, a significant portion of mental health videos is committed to more profound topics**. The gradual shift towards a more sober tone in descriptions and the emergence of weightier topics in video titles both point towards a digital environment that is **increasingly reflective of the real societal dialogue on mental health**.
-
 
 
 &nbsp;
@@ -235,11 +235,14 @@ By then considering the channels with the more significant gains, we can analyze
 ## 4.2  Followers?
 We just conclude that when channels upload their first mental health video can statistically see a upnormal gain in visualization but this is not so strong to be analyzed singularly. Maybe we can take a step back, and analyze the `number` of mental health videos uploaded over time: if there is a positive trand of this, it can mean that either people demand for more mental health video by their favorite youtube, and so this is taken into account by increasing this number and eventually turn into a "mental health" channel.
 
-<!-- <div style="text-align:center;justify-content:center">
+<div style="text-align:center;justify-content:center">
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=wC36qA9gVNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
+</div>
 
-![YouTube](https://www.youtube.com/embed/wC36qA9gVNA)
+[![Watch the video](https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg)](https://www.youtube.com/watch?v=wC36qA9gVNA)
+
+
+<!-- ![YouTube](https://www.youtube.com/embed/wC36qA9gVNA) -->
 
 In particular, by analizing the time series of the weekly change in views, we idenfied one significant channel really symbolic for the type of information we want to search for answering this question. This channel is "Sammy-Marie Grimm", that starts by posting videos about free-time and vlogs, and once in a while, it publishes a mental health related video, in which it gains a more significant amount of views with respect to its standards.
 
