@@ -209,9 +209,10 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 &nbsp;
 ## 4.1  Performance: What brings to followers?
 
-Until now, we try to identify the possible videos related mental health, how this category behaves with respect to others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations (views) and subscribers (subs) of a channel are affected after uploading a mental health video?
-To answer this question, we can now make use of the behaviour of the `views` and `subs` of each channel over time. Particularly we have available a sampling of these two quantities for every week of every channel.
-With this information, we can consider all the channels with at least one mental health video uploaded, and identify the week in which the channel has uploaded a video of this kind for the first time. By then studying the weekly gaining, i.e. `delta` in views and subs before and after this video, we can observe these two quantities for every channel and search for significant differences.
+Until now, we try to identify the possible videos related to mental health, how this category behaves with respect to the others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations (views) and subscribers (subs) of a channel are affected after uploading a mental health video?
+To answer this question, we can now make use of the behaviour of the `views` and `subs` of each channel over time. 
+
+Particularly we have available a sampling of these two quantities for every week of every channel. With this information, we can consider all the channels with at least one mental health video uploaded, and identify the week in which the channel has uploaded a video of this kind for the first time. By then studying the weekly gaining, i.e. `delta` in `views` and `subs` before and after this video, we can observe these two quantities for every channel and search for significant differences.
 
 {% include histogram_delta_views_before_after.html %}
 
