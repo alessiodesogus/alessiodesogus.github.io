@@ -221,31 +221,36 @@ We can apply the same reasoning for subs, obtaining the following figure:
 
 {% include histogram_delta_subs_before_after.html %}
 
-Here the two histograms look more similar one with respect to the other and in fact, performing again a `t-test` between them, there are no significant differences between one another.
+Here the two histograms look more similar one with respect to the other and in fact, performing again a `t-test` between them, there are `no significant` differences between one another.
 These first results can be intepreted by thinking that the first mental health video uploaded by a channel can have contribuated with an abnormal gain in views for a week. But in general it has not shifted by that much, the equilibrium of the channel, by looking at the subscribers, a more stable source of information for identifying the success of a channel.
 
-Anyway we can dig more into these results by focusing in particular on the views, we can try to find the mental health videos for which the gaining in views is more significant and then study in detail the time series of the channels for which this happens. We can for example filter the most important mental health video by taking just the one that gives a gain over a certain threashold.
+Anyway we can dig more into these results by focusing in particular on the views, we can try to find the mental health videos for which the gaining in views is more significant and then study in detail the time series of the channels for which this happens. We can for example filter the most important mental health video by taking just the one that gives a gain over a certain `threashold`.
 
  It is possible to see graphically the different gaining for each channel, before and after the mental health video, highlighting the most significant ones, in the following figure.
 
 {% include histogram_deltas_signi.html %}
 
-By then considering the channels with the more significant gains, we can analyze them sigularly. By doing so we find out that these selected channels do not seem to be a good example for our study because, looking at their content, they do not even upload what we think to be mental health video, but are just probably errors that the filter of first section cannot detect. This can make us say that the statistical different in views does not seem to be so important to allow us to conclude that uploading a mental health video as a direct effect on the channel performance. But it opens up to then analyze the quantity of mental health channel, after the first upoload... (see next section)
+By then considering the channels with the `more significant gains`, we can analyze them singularly. By doing so we find out that these selected channels do not seem to be a good example for our study because, looking at their content, they do not even upload what we think to be mental health video, but are just probably errors that the filter of first section cannot detect. 
+
+This can make us say that the statistical different in views does `not seem to be so important` to allow us to conclude that uploading a mental health video as a direct effect on the channel performance. But it opens up to then analyze the quantity of mental health channel, after the first upload... (see next section)
 
 &nbsp;
 ## 4.2  Followers?
-We just conclude that when channels upload their first mental health video can statistically see a upnormal gain in visualization but this is not so strong to be analyzed singularly. Maybe we can take a step back, and analyze the `number` of mental health videos uploaded over time: if there is a positive trand of this, it can mean that either people demand for more mental health video by their favorite youtube, and so this is taken into account by increasing this number and eventually turn into a "mental health" channel.
+We just conclude that when channels upload their first mental health video, we can statistically see a abnormal gain in visualization but this is not so strong to be analyzed singularly. Maybe we can take a step back, and analyze the `number` of mental health videos uploaded over time: if there is a positive trend of it, it can mean that the audience is demanding for more mental health video by their favorite youtuber. Like for an economic system, the `demand` is adressed by a `supply`: in this case, increasing the number of mental health content and eventually `turn into a mental health related channel`.
 
 [![Watch the video](https://img.youtube.com/vi/wC36qA9gVNA/hqdefault.jpg)](https://www.youtube.com/watch?v=wC36qA9gVNA)
 
-In particular, by analizing the time series of the weekly change in views, we idenfied one significant channel really symbolic for the type of information we want to search for answering this question. This channel is "Sammy-Marie Grimm", that starts by posting videos about free-time and vlogs, and once in a while, it publishes a mental health related video, in which it gains a more significant amount of views with respect to its standards.
+In particular, by analizing the time series of the weekly change in views, we identified one significant channel really symbolic for the type of information we want to search for answering this question. This channel is `Sammy-Marie Grimm`, that starts by posting videos about `free-time` and `vlogs`, and once in a while, it publishes a mental health related video, in which it `gains a more significant` amount of views with respect to its standards.
 
 {% include selected_channel_time_series.html %}
 
-
-As we can see over time, the number of updated mental health video increases over time, in particular considering looking at chuncks of the total time period. In fact, considering the number of updated video in a time `windows of 10 weeks`, we obtain the following figure, for the same channel.
+As we can see over time, the number of updated mental health video increases, in particular looking at pieces of the total time period. In fact, considering the number of updated video in a time `windows of 10 weeks`, we obtain the following figure, for the same channel:
 
 {% include selected_channel_time_series_windows.html %}
 
-We can calculate for each channel this quantity and, throught a Mann-Kendall Trend Test, addressing if the number of mental health videos, uploaded in this time window, has an increasing trend over time. By then, throught a Fisher test, consider collectively all the p-values, we discover the overall we have an `increasing trend`! This is very significant because it means the in general, the identified channels talking about mental health will upload more video, given a local time span. This time span, with respect to the research done before for yearly uploading, wants to measure more locally if more videos about mental health, by channel, are uploaded and this seems to be the case!
+We can calculate for each channel this quantity and, throughout a `Mann-Kendall Trend Test`, addressing if the number of mental health videos, uploaded in this time window, has an increasing trend over time. By then, throughout a `Fisher test`, consider collectively all the `p-values`, we discover that overall we have an `increasing trend`! 
+
+This is notable because it means that, in general, the identified channels talking about mental health will upload more video, given a local time span. Notice that this time span, with respect to the research done before for yearly uploading, wants to measure more locally if more videos about mental health, by channel, are uploaded and this seems to be the case!
+
+
 
