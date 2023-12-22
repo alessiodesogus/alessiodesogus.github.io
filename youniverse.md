@@ -220,32 +220,54 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 
 
 
-
 ## 3.1 New Contents? 
 > RQ3: Is there an impact on new content?
 
-Until now, we try to identify the possible videos related mental health, how this category behaves with respect to others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations and subscribers of a channel are affected after uploading a mental health video?
-To answer this question, we can now make use of the behaviour of the visualizations and subscribers of each channel over time. Particularly we have available a sampling of these two quantities every week.
-With this informations, we can consider all the channel with at least one mental health video uploaded, and identigy the week in which the channel has uploaded this video. By the studying the week gaining in views and subs before and after this video, we can study these two quantities for every channel and search for significant differences.
+I would remove this
 
-{% include histogram_delta_views_before_after.html %}
-
-We can the histogram of these two values all over the channels, using a logarithmic y axis. Already at first glimpse, we can understand that the histogram made by the increament (delta) views after the mental health video seems more shifted to the right, with respect to the increament of the week before the mental health video.
 
 
 &nbsp;
 
-## 3.2 Followers? 
+## 3.2  Performance: What brings to followers?
 > RQ4: Did old channels followed the trends?
+
+Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
+
+Until now, we try to identify the possible videos related mental health, how this category behaves with respect to others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations and subscribers of a channel are affected after uploading a mental health video?
+To answer this question, we can now make use of the behaviour of the visualizations and subscribers of each channel over time. Particularly we have available a sampling of these two quantities for every week of every channel.
+With this informations, we can consider all the channels with at least one mental health video uploaded, and identify the week in which the channel has uploaded a video of this kind for the first time. By the studying the week gaining in views and subs before and after this video, we can study these two quantities for every channel and search for significant differences.
+
+{% include histogram_delta_views_before_after.html %}
+
+We can the histogram of these two values all over the channels, using a logarithmic y axis. Already at first glimpse, we can understand that the histogram made by the increament (delta) views after the mental health video seems more shifted to the right, with respect to the increament of the week before the mental health video. Indeed, comparing them with a t-test, the difference between the two histograms is statistical significant!
+We can apply the same reasoning for subs, obtaining the following figure.
+
+{% include histogram_delta_views_subs_before_after.html %}
+
+Here the two histograms look more similars and in fact, performing again a t-test between them, there are no significant differences between one another.
+These first results can be intepreted by thinking that the first mental health video uploaded by a channel can have contribuated with an abnormal gain in views for a week, but in general it has not shifted by that much, the equilibrium of the channel, by looking at the subscribers, a more stable source of information for identifying the success of a channel.
+But in general we can dig more into these results. Focusing in particular on the views, we can try to find the mental health videos for which the gaining in vews is more significant and then study in detail the time series of the channel for which this happens. We can for example filter the most important mental health video by taking just the one that gives a difference over a certain threashold. We can graphically see the different gaining for each channel, before and after the mental health video, highlighting the most significant ones, in the following figure.
+
+{% include histogram_deltas_signi.html %}
+
+By then considering the channels with the more significant gains, we can analyze them sigularly. By doing so we find out that these selected channels do not seem to be good example for mental health channel. This can make us say that the statistical different in visualization does not see so important to allow us to conclude that uploading a mental health video as a direct effect on the channel performance, but it opens up to then analyze the quantity of mental health channel, after the first upoload... (see next section)
+(REWRITE EVERYTHING BETTER)
+
+
+
+
+&nbsp;
+
+## 3.3  Followers?
+> RQ5: For those following channels, does the trend have positive / negative impact on them? 
+
 
 Did old channels that were not speaking about mental health start speaking about it?
 
 
+By analizign the time series of the weekly change in views, we idenfied one particular channel really symbolic for the type of information we want to search for answering this question.
 
-&nbsp;
+{% include histogram_deltas_signi.html %}
 
-## 3.3 Performance: What brings to followers?
-> RQ5: For those following channels, does the trend have positive / negative impact on them? 
-
-Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
 
