@@ -263,7 +263,7 @@ Did old channels that were not speaking about mental health start speaking about
 
 By analizign the time series of the weekly change in views, we idenfied one particular channel really symbolic for the type of information we want to search for answering this question. This channel is "Sammy-Marie Grimm", that starts by posting videos about free-time and vlogs, and once in a while, it publishes a mental health related video, in which it gains a more significant amount of views with respect to its standards.
 
-{% include histogram_deltas_signi.html %}
+{% include selected_channel_time_series.html %}
 
 
 As we can see over time, the number of updated mental health video increases over time, in particular in span of time period. By then considering the number of updated video in a time windows of 10 weeks, we obtain the following figure, for the same channel.
