@@ -242,6 +242,10 @@ But in general we can dig more into these results. Focusing in particular on the
 By then considering the channels with the more significant gains, we can analyze them sigularly. By doing so we find out that these selected channels do not seem to be good example for mental health channel. This can make us say that the statistical different in visualization does not see so important to allow us to conclude that uploading a mental health video as a direct effect on the channel performance, but it opens up to then analyze the quantity of mental health channel, after the first upoload... (see next section)
 (REWRITE EVERYTHING BETTER)
 
+<div style="text-align:center;justify-content:center">
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wC36qA9gVNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 &nbsp;
 
 ## 4.2  Followers?
