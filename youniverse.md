@@ -72,19 +72,6 @@ Now lets see some of our results:
 
 Great! Our final results are now much more relevant and convincing 🎉, and we are ready to step into the next step! 
 
-<!-- **Further Improvement**: It takes a long time to process through the data, so we cannot do the loop many times. However, further filter on the topic may include improving keyword list quality, adopting stemming on words for better matching, etc. -->
-
-<!-- ### 1.1.3 Control Group
-Aside from the target videos reagarding mental health, we also aim to retrieve videos of **three representative types**:
-
-- Long-term trendy videos: This type of videos is the result of a long-term social trend, reflecting the raising awareness of some profound topics, e.g. `gender equality`, `climate change`. These topics enjoy a long-lasting attention and a steady increase in terms of YouTube videos. We hypothesize that `mental health` should belongs to such topic.
-
-- Short-term trendy videos: This type of videos represents a very fashionable impulse on people posting same kind of videos just because other people are also doing it. The heat may be extreme at the moment but may not last long. Example such as `ice bucket challenge`, etc.
-
-- Control group videos: This type of videos had not been brought to the spot of light during 2015-2019, but nonetheless we may still observe a growth in the number of videos on YouTube because the user growth and prevelant influence of digitilization.
-
-We would like to compare the trend of the three types of videos and see if any interesting conclusion may be drawn from the results. -->
-
 ![invitation](assets/img/are-you-ready.gif)
 
 ## 1.2 What does data say?
@@ -95,18 +82,16 @@ Numbers matter! -- We closely investigate how many videos about mental health ar
 
 {% include ratio.html %}
 
-However, we do not want to immdediately jump to a conclusion that there's no trend for the uploaded videos at all. What about other socially important topics? What are their performance throughout years? So, we make comparison with their trend as well. Specificaly, we choose `gender equality` and `climate change` as our compared topics, two other important social issues receiving growing attention. We plot their respective ratio throughout the years and put it into the log scales for a clearer comparison. It is rather surprising to see that none of the comparing trends shows a dramatic increase for their ratios. Nonetheless, **mental health issues receives more attention than the comparing topics**.
+However, we do not want to immdediately jump to a conclusion without a proper comparison with other topics. Specificaly, we choose `gender equality` and `climate change`, the two other important social issues receiving growing attention, as our compared topics. We plot their respective ratio throughout the years and put it into the log scales for a clearer comparison. It is rather surprising to see that none of the other comparing trends shows a noticable increase for their ratios. And the **mental health videos out ranks both gender equality and climate change videos in upload number and increase rate**.
 
  {% include comparison.html %}
 
 Maybe... We hypothesize that remaining a stable uploading ratio already means a sustained and consistent attention indicating it is one of the social trend. The upward trend doesn't show because the ranges of videos on YouTube are increasingly explored making the total numbers of videos rises comparably faster than videos from the specific topic.
 
-### 1.2.1 Popular?
-Numbers is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score with respect to the added popularity_score of the videos: Still no trend, but more: We can see that the ratio of the popularity score of mental health is higher than the other two topics as well. 
+### 1.2.2 Popular?
+Numbers is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score with respect to the added popularity_score of the videos: A similar case -- with mental health videos showing a mild increasing trend and the comparing topics fluctuate throughout the years. Now, we are confident to say that  **there is a temper yet significant increase in monthly uploading mental health videos, suggesting its social importance and rising attention paid to the topic**. 
 
 {% include popular.html %}
-
-Thus, we reach a conclusion that **there is no significant increase in yearly uploading mental health videos**, but compared to other representative topics, **mental health indeed is a hot topic kept being discussed every year** and draw much attention. 
 
 &nbsp;
 
@@ -121,7 +106,7 @@ In this section ,we aim to delve deep inside the mental health videos and would 
 To do this, we divide the keywords into several groups to our best knowledge, and calculate their frequency according to their appearance in the mental health videos.
 
 
-## 2.1 Who suffers the most?
+## 2.1 Which group of people?
 
 We count the frequency of `man`, `woman`, `teenager` and `senior` appeared in our target videos.
 
@@ -137,7 +122,7 @@ As for **gender**, `woman` is higher than men. There are many factors like biolo
 From a biological standpoint, for example, due to their brain’s wiring, women report higher levels of empathy and emotional understanding than men. These qualities, while generally positive, are closely tied to worsening depression, anxiety, and trauma. Women also have different experiences than men, in general, women are constantly up against societal expectations and pressures that can negatively impact their mental health. For example, women place great importance on their physical appearance – largely because society tells them to do so. 
 
 
-## 2.2 What is suffered the most? 
+## 2.2 What's the biggest issue? 
 Now, let's see the most mentioned category. 
 
 {% include category.html %}
@@ -150,9 +135,9 @@ We apply a heatmap to closely examine the intersection between people and mental
 
 {% include heatmap.html %}
 
-
 # Positive or negative?
 > RQ3: What is the common sentiment when people talk about mental health, and what does that reveil?
+
 ### 3.1 Sentiment of the videos
 
 Let's examine the overall sentiment landscape of mental health videos. 
@@ -165,7 +150,7 @@ As time progresses, we notice a shift towards negative sentiment. What does this
 
 This evolving sentiment pattern might be a response to a growing demand for authenticity in mental health discussions, rather than mere trends. The consistent increase in negative sentiment over 14 years suggests a deeper, more meaningful change in how mental health is portrayed in digital media.
 
-Now, let's consider how sentiment scores correlate with popularity, defined by `popularity_score` = `view_count` + `like_count`. 
+Now, let's consider how sentiment scores correlate with popularity score defined in 1.2.2. 
 
 {% include distribution_popularity.html %}
 
@@ -246,14 +231,15 @@ But in general we can dig more into these results. Focusing in particular on the
 
 By then considering the channels with the more significant gains, we can analyze them sigularly. By doing so we find out that these selected channels do not seem to be a good example for our study because, looking at their content, they do not even upload what we think to be mental health video, but are just probably errors that the filter of first section cannot detect. This can make us say that the statistical different in views does not seem to be so important to allow us to conclude that uploading a mental health video as a direct effect on the channel performance. But it opens up to then analyze the quantity of mental health channel, after the first upoload... (see next section)
 
-<div style="text-align:center;justify-content:center">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wC36qA9gVNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 &nbsp;
-
 ## 4.2  Followers?
 We just conclude that when channels upload their first mental health video can statistically see a upnormal gain in visualization but this is not so strong to be analyzed singularly. Maybe we can take a step back, and analyze the `number` of mental health videos uploaded over time: if there is a positive trand of this, it can mean that either people demand for more mental health video by their favorite youtube, and so this is taken into account by increasing this number and eventually turn into a "mental health" channel.
+
+<!-- <div style="text-align:center;justify-content:center">
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wC36qA9gVNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
+![YouTube](https://www.youtube.com/embed/wC36qA9gVNA)
 
 In particular, by analizing the time series of the weekly change in views, we idenfied one significant channel really symbolic for the type of information we want to search for answering this question. This channel is "Sammy-Marie Grimm", that starts by posting videos about free-time and vlogs, and once in a while, it publishes a mental health related video, in which it gains a more significant amount of views with respect to its standards.
 
