@@ -88,10 +88,10 @@ However, we do not want to immdediately jump to a conclusion without a proper co
 
  {% include comparison.html %}
 
-Maybe... We hypothesize that remaining a stable uploading ratio already means a sustained and consistent attention indicating it is one of the social trend. The upward trend doesn't show because the ranges of videos on YouTube are increasingly explored making the total numbers of videos rises comparably faster than videos from the specific topic.
+<!-- Maybe... We hypothesize that remaining a stable uploading ratio already means a sustained and consistent attention indicating it is one of the social trend. The upward trend doesn't show because the ranges of videos on YouTube are increasingly explored making the total numbers of videos rises comparably faster than videos from the specific topic. -->
 
 ### 1.2.2 Popular?
-Numbers is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score with respect to the added popularity_score of the videos: A similar case -- with mental health videos showing a mild increasing trend and the comparing topics fluctuate throughout the years. Now, we are confident to say that  **there is a temper yet significant increase in monthly uploading mental health videos, suggesting its social importance and rising attention paid to the topic**. 
+Numbers is not everything, what about the **POPULARITY** of the videos? Here, we define the popularity score as `popularity_score` = `view_count` + `like_count`, and let's compare the ratio of the popularity score with respect to the added popularity_score of the videos: a similar case -- with mental health videos showing a mild increasing trend and the comparing topics fluctuate throughout the years. Now, we are confident to say that  **there is a temper yet significant increase in monthly uploading mental health videos, suggesting its social importance and rising attention paid to the topic**. 
 
 {% include popular.html %}
 
@@ -100,7 +100,7 @@ Numbers is not everything, what about the **POPULARITY** of the videos? Here, we
 # Characteristics: What it is talking?
 > RQ2: Which topics predominate in the mental health category?
 
-In this section ,we aim to delve deep inside the mental health videos and would like to study two problems:
+In this section, we aim to delve deep inside the mental health videos and would like to study two problems:
 1) What is the most `frequently mentioned group of people`?  
 2) Among all the videos, what is the most `frequently mentioned mental issues`? Disorder or suicide, etc?
 3) Finally, throughout the years, do the situation varies?
@@ -118,10 +118,7 @@ And see that throughout all the years:
 
 As for **age**, mental issues regarding `teenager` remains the biggest problem. It is because adolescence is a unique and formative time. Physical, emotional and social changes, including exposure to poverty, abuse, or violence, can make adolescents vulnerable to mental health problems. (but there could be cofounders like the access to Internet, teenagers therefore get more attention).  
 
-As for **gender**, `woman` is higher than men. There are many factors like biological makeup and experience in society that are thought to increase women’s vulnerability to mental health disorders.
-
-
-From a biological standpoint, for example, due to their brain’s wiring, women report higher levels of empathy and emotional understanding than men. These qualities, while generally positive, are closely tied to worsening depression, anxiety, and trauma. Women also have different experiences than men, in general, women are constantly up against societal expectations and pressures that can negatively impact their mental health. For example, women place great importance on their physical appearance – largely because society tells them to do so. 
+As for **gender**, `woman` is higher than men. There are many factors like biological makeup and experience in society that are thought to increase women’s vulnerability to mental health disorders. From a biological standpoint, for example, due to their brain’s wiring, women report higher levels of empathy and emotional understanding than men. These qualities, while generally positive, are closely tied to worsening depression, anxiety, and trauma. Women also have different experiences than men, in general, women are constantly up against societal expectations and pressures that can negatively impact their mental health. For example, women place great importance on their physical appearance – largely because society tells them to do so. 
 
 
 ## 2.2 What's the biggest issue? 
@@ -168,8 +165,8 @@ For the first observation, we can perform a linear regression analysis in the mi
 There is a discernible downward trend in the average sentiment score. This gradual decline could indicate that creators with a larger audience may feel a responsibility to present a more multifaceted and perhaps less idealized view of mental health.
 
 For the second observation, this variability in top videos suggests that more popular videos tend to polarize opinion. Maybe, this pattern comes from 
-1. genuine desire to contribute to the destigmatization of mental health issue?
-2. a pursuit of popularity => trend-following? 
+1. Genuine desire to contribute to the destigmatization of mental health issue?
+2. A pursuit of popularity: trend-following? 
 
 To understand what the popular videos are trying to deliver with such polarized sentiment score distributions, we may turn to topic detection analysis based on the LDA model.
 
@@ -200,7 +197,7 @@ Our findings show that **while there is some content that may follow viewing tre
 # What does the Trend Bring?
 > RQ4: Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
 
-> RQ5: Did old channels that were not speaking about mental health start more often to speak about it?
+> RQ5: Did channels that were not speaking about mental health start more often to speak about it?
 
 In the above part, we talk about the mental health videos on YouTube. 
 
@@ -212,7 +209,7 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 &nbsp;
 ## 4.1  Performance: What brings to followers?
 
-Until now, we try to identify the possible videos related mental health, how this category behaves with respect to others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations(views) and subscribers (subs) of a channel are affected after uploading a mental health video?
+Until now, we try to identify the possible videos related mental health, how this category behaves with respect to others and which category of people is the most affected by mental health. But can we now take a look at the problem, from the youtuber point of view? How visualizations (views) and subscribers (subs) of a channel are affected after uploading a mental health video?
 To answer this question, we can now make use of the behaviour of the `views` and `subs` of each channel over time. Particularly we have available a sampling of these two quantities for every week of every channel.
 With this information, we can consider all the channels with at least one mental health video uploaded, and identify the week in which the channel has uploaded a video of this kind for the first time. By then studying the weekly gaining, i.e. `delta` in views and subs before and after this video, we can observe these two quantities for every channel and search for significant differences.
 
