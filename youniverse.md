@@ -256,9 +256,9 @@ This is notable because it means that, in general, the identified channels talki
 # Conclusion
 We first try to find all the `relevant mental health videos` among the 72.9M videos available. Once found those, we analyze their uploading over the years and successfully conclude that there is a mild yet `significant increase` of their numbers and ratios. 
 
-Then, we take a deeper look into the `predominant topics` and  examine the `intersection between people categories` and these topics to conclude that, by age, teenagers and by gender, `women` are the most vulnerable groups affected especially by `stress` and `depression`.
+Then, we take a deeper look into the `predominant topics` and  examine the `intersection between people categories` and these topics to conclude that, by age, `teenagers` and by gender, `women` are the most vulnerable groups affected especially by `stress` and `depression`.
 
-Also, through `sentiment analysis`, we observe a dual nature in mental health content: some align with lighter trends, while a `significant portion` delves into `profound topics`. This shift towards more serious discussions, evident in video titles and descriptions, reflects a growing alignment between digital content and real societal dialogue on mental health.
+Also, through `sentiment analysis`, we observe a dual nature in mental health content: some align with lighter trends, while a `significant portion` delves into `profound topics`. This shift towards more serious discussions, evident in video titles and descriptions, reflects a `growing alignment between digital content and real societal dialogue` on mental health.
 
 Eventually, we study in details the time pattern of `views` and `subs` for all the channels, concluding that uploading a mental health video gives a `significant gain` in `views`, but hardly visible at a non-global scale. From this, we examine the number of mental health uploading in a `specific window of time`, discovering an `increase over time`. This can be interpret either by genuine interest in this topic or by a more down-to-earth trend following.  
 
