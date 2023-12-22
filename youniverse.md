@@ -27,7 +27,7 @@ We are using the dataset [YouNiverse](https://doi.org/10.5281/zenodo.46500463), 
 
 &nbsp;
 # Mental Health: is it trendy?
-<!-- > RQ1: Is mental health a trend on YouTube? -->
+> RQ1: Is mental health a trend on YouTube?
 
 `Mental Health` has never been a new topic: as early as the beginning of 21st Century, one in four adults in US suffered from mental illness -- that is nearly 60 million Americans in any given year _(Agency for Healthcare Research and Quality, 2009)_. However, not many of us paid serious attention to such problem. It all starts to change in September 2021, the year COVID-19 pandemic broke out, when things gets paticularly bad and the word mental health has become a publicly aware problem. According to the World Health Organization (WHO), because of the lockdown and economic setbacks, cases of anxiety and depression have `increased by 25%` globally, with suicide the second leading cause of death among 15-29-year-olds. Approximately `one in five people` in post-conflict settings have a mental health condition. 
 
@@ -146,9 +146,9 @@ And we can see `stress` is the most mentioned problem, followed by `suicide` and
 
 
 
-## 2.3 What are the videos talking about?
-
-### 2.3.1 Sentiment of the videos
+# Positive or negative?
+> RQ3: What is the common sentiment when people talk about mental health, and what does that reveil?
+### 3.1 Sentiment of the videos
 
 Let's examine the overall sentiment landscape of mental health videos. 
 
@@ -182,7 +182,7 @@ For the second observation, this variability in top videos suggests that more po
 To understand what the popular videos are trying to deliver with such polarized sentiment score distributions, we may turn to topic detection analysis based on the LDA model.
 
 
-### 2.3.2 Topic keywords of the videos
+## 3.2 Topic keywords of the videos
 
 We focus on the top 500 videos with the highest popularity scores, analyzing their titles to grasp the core topics, as titles can concisely summarize the videos' themes comparing to the description parts with some irrelevant information like URL.
 
@@ -207,7 +207,6 @@ Our findings show that **while there is some content that may follow viewing tre
 
 
 &nbsp;
-
 # What does the Trend Bring?
 In the above part, we talk about the mental health videos on YouTube. 
 
@@ -217,15 +216,9 @@ Now, hold on for a while. The nature of the problem might depend on your perspec
 
 
 
-
-
-
-
-
 &nbsp;
-
-## 3.1  Performance: What brings to followers?
-> RQ4: Did old channels followed the trends?
+## 4.1  Performance: What brings to followers?
+> RQ4: Did old channels followed the trends?  For those following, does the trend have positive / negative impact on them? 
 
 Can we see an increase (or decrease) in performance (subscribers, views, likes, ...) for channels that speak about mental health?
 
@@ -249,14 +242,9 @@ But in general we can dig more into these results. Focusing in particular on the
 By then considering the channels with the more significant gains, we can analyze them sigularly. By doing so we find out that these selected channels do not seem to be good example for mental health channel. This can make us say that the statistical different in visualization does not see so important to allow us to conclude that uploading a mental health video as a direct effect on the channel performance, but it opens up to then analyze the quantity of mental health channel, after the first upoload... (see next section)
 (REWRITE EVERYTHING BETTER)
 
-
-
-
 &nbsp;
 
-## 3.2  Followers?
-> RQ5: For those following channels, does the trend have positive / negative impact on them? 
-
+## 4.2  Followers?
 
 Did old channels that were not speaking about mental health start speaking about it?
 
@@ -264,7 +252,6 @@ Did old channels that were not speaking about mental health start speaking about
 By analizign the time series of the weekly change in views, we idenfied one particular channel really symbolic for the type of information we want to search for answering this question. This channel is "Sammy-Marie Grimm", that starts by posting videos about free-time and vlogs, and once in a while, it publishes a mental health related video, in which it gains a more significant amount of views with respect to its standards.
 
 {% include selected_channel_time_series.html %}
-
 
 As we can see over time, the number of updated mental health video increases over time, in particular in span of time period. By then considering the number of updated video in a time windows of 10 weeks, we obtain the following figure, for the same channel.
 
