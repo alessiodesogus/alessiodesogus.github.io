@@ -1,5 +1,7 @@
-# Is YouTube Riding the Mental Health Wave?
+# 🎥 Is YouTube Riding the Mental Health Wave? 🌊  
 
-## Deep-dive into the YouTube Mental Health World
+## 🧠 Deep-Dive into the YouTube Mental Health World  
 
-__Check out [*Website*](https://alessiodesogus.github.io/youniverse/#) to see the full story !__
+🔍 Explore how YouTube engages with mental health content and its impact on viewers.  
+
+✨ **Check out the full story on the [Website](https://alessiodesogus.github.io/youniverse/#) !**  
